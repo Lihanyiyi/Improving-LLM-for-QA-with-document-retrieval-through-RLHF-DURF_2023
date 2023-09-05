@@ -1,0 +1,2417 @@
+srun: fatal: No command given to execute.
+[08/21/23 10:02:57] INFO     colossalai - colossalai - INFO:                    
+                             /scratch/yl9315/miniconda3/envs/coati1/lib/python3.
+                             10/site-packages/colossalai/context/parallel_contex
+                             t.py:522 set_device                                
+                    INFO     colossalai - colossalai - INFO: process rank 0 is  
+                             bound to device 0                                  
+[08/21/23 10:03:03] INFO     colossalai - colossalai - INFO:                    
+                             /scratch/yl9315/miniconda3/envs/coati1/lib/python3.
+                             10/site-packages/colossalai/context/parallel_contex
+                             t.py:558 set_seed                                  
+                    INFO     colossalai - colossalai - INFO: initialized seed on
+                             rank 0, numpy: 42, python random: 42,              
+                             ParallelMode.DATA: 42, ParallelMode.TENSOR: 42,the 
+                             default parallel seed is ParallelMode.DATA.        
+                    INFO     colossalai - colossalai - INFO:                    
+                             /scratch/yl9315/miniconda3/envs/coati1/lib/python3.
+                             10/site-packages/colossalai/initialize.py:115      
+                             launch                                             
+                    INFO     colossalai - colossalai - INFO: Distributed        
+                             environment is initialized, data parallel size: 1, 
+                             pipeline parallel size: 1, tensor parallel size: 1 
+/scratch/yl9315/miniconda3/envs/coati1/lib/python3.10/site-packages/colossalai/booster/booster.py:70: UserWarning: The plugin will control the accelerator, so the device argument will be ignored.
+  warnings.warn('The plugin will control the accelerator, so the device argument will be ignored.')
+/scratch/yl9315/miniconda3/envs/coati1/lib/python3.10/site-packages/colossalai/booster/booster.py:76: UserWarning: The plugin will control the precision, so the mixed_precision argument will be ignored.
+  warnings.warn('The plugin will control the precision, so the mixed_precision argument will be ignored.')
+/scratch/yl9315/miniconda3/envs/coati1/lib/python3.10/site-packages/colossalai/kernel/op_builder/utils.py:94: UserWarning: [extension] The CUDA version on the system (11.6) does not match with the version (11.7) torch was compiled with. The mismatch is found in the minor version. As the APIs are compatible, we will allow compilation to proceed. If you encounter any issue when using the built kernel, please try to build it again with fully matched CUDA versions
+  warnings.warn(
+/scratch/yl9315/miniconda3/envs/coati1/lib/python3.10/site-packages/colossalai/kernel/op_builder/utils.py:94: UserWarning: [extension] The CUDA version on the system (11.6) does not match with the version (11.7) torch was compiled with. The mismatch is found in the minor version. As the APIs are compatible, we will allow compilation to proceed. If you encounter any issue when using the built kernel, please try to build it again with fully matched CUDA versions
+  warnings.warn(
+[08/21/23 10:03:20] INFO     colossalai - colossalai - INFO:                    
+                             /scratch/yl9315/miniconda3/envs/coati1/lib/python3.
+                             10/site-packages/coati/dataset/prompt_dataset.py:24
+                              __init__                                          
+                    INFO     colossalai - colossalai - INFO: Loading data...    
+                    INFO     colossalai - colossalai - INFO:                    
+                             /scratch/yl9315/miniconda3/envs/coati1/lib/python3.
+                             10/site-packages/coati/dataset/prompt_dataset.py:26
+                              __init__                                          
+                    INFO     colossalai - colossalai - INFO: Loaded 765         
+                             examples.                                          
+                    INFO     colossalai - colossalai - INFO:                    
+                             /scratch/yl9315/miniconda3/envs/coati1/lib/python3.
+                             10/site-packages/coati/dataset/prompt_dataset.py:29
+                              __init__                                          
+                    INFO     colossalai - colossalai - INFO: Limiting dataset to
+                             16384 examples.                                    
+                    INFO     colossalai - colossalai - INFO:                    
+                             /scratch/yl9315/miniconda3/envs/coati1/lib/python3.
+                             10/site-packages/coati/dataset/sft_dataset.py:120  
+                             __init__                                           
+                    INFO     colossalai - colossalai - INFO: Loading data...    
+[08/21/23 10:03:21] INFO     colossalai - colossalai - INFO:                    
+                             /scratch/yl9315/miniconda3/envs/coati1/lib/python3.
+                             10/site-packages/coati/dataset/sft_dataset.py:122  
+                             __init__                                           
+                    INFO     colossalai - colossalai - INFO: Loaded 765         
+                             examples.                                          
+                    INFO     colossalai - colossalai - INFO:                    
+                             /scratch/yl9315/miniconda3/envs/coati1/lib/python3.
+                             10/site-packages/coati/dataset/sft_dataset.py:125  
+                             __init__                                           
+                    INFO     colossalai - colossalai - INFO: Limiting dataset to
+                             16384 examples.                                    
+                    INFO     colossalai - colossalai - INFO:                    
+                             /scratch/yl9315/miniconda3/envs/coati1/lib/python3.
+                             10/site-packages/coati/dataset/sft_dataset.py:128  
+                             __init__                                           
+                    INFO     colossalai - colossalai - INFO: Formatting         
+                             inputs...                                          
+                    INFO     colossalai - colossalai - INFO:                    
+                             /scratch/yl9315/miniconda3/envs/coati1/lib/python3.
+                             10/site-packages/coati/dataset/sft_dataset.py:139  
+                             __init__                                           
+                    INFO     colossalai - colossalai - INFO: Tokenizing         
+                             inputs... This may take some time...               
+Episodes:   0%|          | 0/10 [00:00<?, ?it/s]
+Collect steps:   0%|          | 0/10 [00:00<?, ?it/s][A
+Collect steps:  10%|█         | 1/10 [00:17<02:39, 17.70s/it][A
+Collect steps:  20%|██        | 2/10 [00:34<02:15, 16.92s/it][A
+Collect steps:  30%|███       | 3/10 [00:50<01:55, 16.47s/it][A
+Collect steps:  40%|████      | 4/10 [01:05<01:37, 16.20s/it][A
+Collect steps:  50%|█████     | 5/10 [01:21<01:20, 16.06s/it][A
+Collect steps:  60%|██████    | 6/10 [01:37<01:03, 15.99s/it][A
+Collect steps:  70%|███████   | 7/10 [01:53<00:47, 15.96s/it][A
+Collect steps:  80%|████████  | 8/10 [02:09<00:31, 15.93s/it][A
+Collect steps:  90%|█████████ | 9/10 [02:25<00:15, 15.92s/it][A
+Collect steps: 100%|██████████| 10/10 [02:40<00:00, 15.90s/it][ACollect steps: 100%|██████████| 10/10 [02:40<00:00, 16.10s/it]
+
+Update steps:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+Train epoch [1]:   0%|          | 0/10 [00:00<?, ?it/s][A[A
+
+Train epoch [1]:   0%|          | 0/10 [00:00<?, ?it/s, reward=-1.39][A[A
+
+Train epoch [1]:  10%|█         | 1/10 [00:00<00:02,  3.68it/s, reward=-1.39][A[A
+
+Train epoch [1]:  10%|█         | 1/10 [00:00<00:02,  3.68it/s, reward=-1.59][A[A
+
+Train epoch [1]:  20%|██        | 2/10 [00:00<00:02,  3.76it/s, reward=-1.59][A[A
+
+Train epoch [1]:  20%|██        | 2/10 [00:00<00:02,  3.76it/s, reward=-1.57][A[A
+
+Train epoch [1]:  30%|███       | 3/10 [00:00<00:01,  3.80it/s, reward=-1.57][A[A
+
+Train epoch [1]:  30%|███       | 3/10 [00:01<00:01,  3.80it/s, reward=-1.32][A[A
+
+Train epoch [1]:  40%|████      | 4/10 [00:01<00:01,  3.81it/s, reward=-1.32][A[A
+
+Train epoch [1]:  40%|████      | 4/10 [00:01<00:01,  3.81it/s, reward=-1.35][A[A
+
+Train epoch [1]:  50%|█████     | 5/10 [00:01<00:01,  3.82it/s, reward=-1.35][A[A
+
+Train epoch [1]:  50%|█████     | 5/10 [00:01<00:01,  3.82it/s, reward=-1.52][A[A
+
+Train epoch [1]:  60%|██████    | 6/10 [00:01<00:01,  3.82it/s, reward=-1.52][A[A
+
+Train epoch [1]:  60%|██████    | 6/10 [00:01<00:01,  3.82it/s, reward=-1.49][A[A
+
+Train epoch [1]:  70%|███████   | 7/10 [00:01<00:00,  3.83it/s, reward=-1.49][A[A
+
+Train epoch [1]:  70%|███████   | 7/10 [00:02<00:00,  3.83it/s, reward=-1.34][A[A
+
+Train epoch [1]:  80%|████████  | 8/10 [00:02<00:00,  3.83it/s, reward=-1.34][A[A
+
+Train epoch [1]:  80%|████████  | 8/10 [00:02<00:00,  3.83it/s, reward=-1.31][A[A
+
+Train epoch [1]:  90%|█████████ | 9/10 [00:02<00:00,  3.83it/s, reward=-1.31][A[A
+
+Train epoch [1]:  90%|█████████ | 9/10 [00:02<00:00,  3.83it/s, reward=-1.41][A[A
+
+Train epoch [1]: 100%|██████████| 10/10 [00:02<00:00,  3.83it/s, reward=-1.41][A[ATrain epoch [1]: 100%|██████████| 10/10 [00:02<00:00,  3.82it/s, reward=-1.41]
+
+Update steps:  20%|██        | 1/5 [00:02<00:11,  2.89s/it][A
+
+Train epoch [2]:   0%|          | 0/10 [00:00<?, ?it/s][A[A
+
+Train epoch [2]:   0%|          | 0/10 [00:00<?, ?it/s, reward=-1.38][A[A
+
+Train epoch [2]:  10%|█         | 1/10 [00:00<00:02,  3.84it/s, reward=-1.38][A[A
+
+Train epoch [2]:  10%|█         | 1/10 [00:00<00:02,  3.84it/s, reward=-1.28][A[A
+
+Train epoch [2]:  20%|██        | 2/10 [00:00<00:02,  3.84it/s, reward=-1.28][A[A
+
+Train epoch [2]:  20%|██        | 2/10 [00:00<00:02,  3.84it/s, reward=-1.21][A[A
+
+Train epoch [2]:  30%|███       | 3/10 [00:00<00:01,  3.84it/s, reward=-1.21][A[A
+
+Train epoch [2]:  30%|███       | 3/10 [00:01<00:01,  3.84it/s, reward=-1.62][A[A
+
+Train epoch [2]:  40%|████      | 4/10 [00:01<00:01,  3.84it/s, reward=-1.62][A[A
+
+Train epoch [2]:  40%|████      | 4/10 [00:01<00:01,  3.84it/s, reward=-1.42][A[A
+
+Train epoch [2]:  50%|█████     | 5/10 [00:01<00:01,  3.83it/s, reward=-1.42][A[A
+
+Train epoch [2]:  50%|█████     | 5/10 [00:01<00:01,  3.83it/s, reward=-1.39][A[A
+
+Train epoch [2]:  60%|██████    | 6/10 [00:01<00:01,  3.83it/s, reward=-1.39][A[A
+
+Train epoch [2]:  60%|██████    | 6/10 [00:01<00:01,  3.83it/s, reward=-1.39][A[A
+
+Train epoch [2]:  70%|███████   | 7/10 [00:01<00:00,  3.84it/s, reward=-1.39][A[A
+
+Train epoch [2]:  70%|███████   | 7/10 [00:02<00:00,  3.84it/s, reward=-1.56][A[A
+
+Train epoch [2]:  80%|████████  | 8/10 [00:02<00:00,  3.84it/s, reward=-1.56][A[A
+
+Train epoch [2]:  80%|████████  | 8/10 [00:02<00:00,  3.84it/s, reward=-1.58][A[A
+
+Train epoch [2]:  90%|█████████ | 9/10 [00:02<00:00,  3.84it/s, reward=-1.58][A[A
+
+Train epoch [2]:  90%|█████████ | 9/10 [00:02<00:00,  3.84it/s, reward=-1.45][A[A
+
+Train epoch [2]: 100%|██████████| 10/10 [00:02<00:00,  3.84it/s, reward=-1.45][A[ATrain epoch [2]: 100%|██████████| 10/10 [00:02<00:00,  3.84it/s, reward=-1.45]
+
+Update steps:  40%|████      | 2/5 [00:05<00:08,  2.73s/it][A
+
+Train epoch [3]:   0%|          | 0/10 [00:00<?, ?it/s][A[A
+
+Train epoch [3]:   0%|          | 0/10 [00:00<?, ?it/s, reward=-1.68][A[A
+
+Train epoch [3]:  10%|█         | 1/10 [00:00<00:02,  3.84it/s, reward=-1.68][A[A
+
+Train epoch [3]:  10%|█         | 1/10 [00:00<00:02,  3.84it/s, reward=-1.15][A[A
+
+Train epoch [3]:  20%|██        | 2/10 [00:00<00:02,  3.83it/s, reward=-1.15][A[A
+
+Train epoch [3]:  20%|██        | 2/10 [00:00<00:02,  3.83it/s, reward=-1.47][A[A
+
+Train epoch [3]:  30%|███       | 3/10 [00:00<00:01,  3.83it/s, reward=-1.47][A[A
+
+Train epoch [3]:  30%|███       | 3/10 [00:01<00:01,  3.83it/s, reward=-1.43][A[A
+
+Train epoch [3]:  40%|████      | 4/10 [00:01<00:01,  3.83it/s, reward=-1.43][A[A
+
+Train epoch [3]:  40%|████      | 4/10 [00:01<00:01,  3.83it/s, reward=-1.11][A[A
+
+Train epoch [3]:  50%|█████     | 5/10 [00:01<00:01,  3.83it/s, reward=-1.11][A[A
+
+Train epoch [3]:  50%|█████     | 5/10 [00:01<00:01,  3.83it/s, reward=-1.37][A[A
+
+Train epoch [3]:  60%|██████    | 6/10 [00:01<00:01,  3.83it/s, reward=-1.37][A[A
+
+Train epoch [3]:  60%|██████    | 6/10 [00:01<00:01,  3.83it/s, reward=-1.49][A[A
+
+Train epoch [3]:  70%|███████   | 7/10 [00:01<00:00,  3.83it/s, reward=-1.49][A[A
+
+Train epoch [3]:  70%|███████   | 7/10 [00:02<00:00,  3.83it/s, reward=-1.59][A[A
+
+Train epoch [3]:  80%|████████  | 8/10 [00:02<00:00,  3.83it/s, reward=-1.59][A[A
+
+Train epoch [3]:  80%|████████  | 8/10 [00:02<00:00,  3.83it/s, reward=-1.39][A[A
+
+Train epoch [3]:  90%|█████████ | 9/10 [00:02<00:00,  3.84it/s, reward=-1.39][A[A
+
+Train epoch [3]:  90%|█████████ | 9/10 [00:02<00:00,  3.84it/s, reward=-1.59][A[A
+
+Train epoch [3]: 100%|██████████| 10/10 [00:02<00:00,  3.83it/s, reward=-1.59][A[ATrain epoch [3]: 100%|██████████| 10/10 [00:02<00:00,  3.83it/s, reward=-1.59]
+
+Update steps:  60%|██████    | 3/5 [00:08<00:05,  2.67s/it][A
+
+Train epoch [4]:   0%|          | 0/10 [00:00<?, ?it/s][A[A
+
+Train epoch [4]:   0%|          | 0/10 [00:00<?, ?it/s, reward=-1.46][A[A
+
+Train epoch [4]:  10%|█         | 1/10 [00:00<00:02,  3.83it/s, reward=-1.46][A[A
+
+Train epoch [4]:  10%|█         | 1/10 [00:00<00:02,  3.83it/s, reward=-1.41][A[A
+
+Train epoch [4]:  20%|██        | 2/10 [00:00<00:02,  3.82it/s, reward=-1.41][A[A
+
+Train epoch [4]:  20%|██        | 2/10 [00:00<00:02,  3.82it/s, reward=-1.39][A[A
+
+Train epoch [4]:  30%|███       | 3/10 [00:00<00:01,  3.82it/s, reward=-1.39][A[A
+
+Train epoch [4]:  30%|███       | 3/10 [00:01<00:01,  3.82it/s, reward=-1.5] [A[A
+
+Train epoch [4]:  40%|████      | 4/10 [00:01<00:01,  3.82it/s, reward=-1.5][A[A
+
+Train epoch [4]:  40%|████      | 4/10 [00:01<00:01,  3.82it/s, reward=-1.48][A[A
+
+Train epoch [4]:  50%|█████     | 5/10 [00:01<00:01,  3.82it/s, reward=-1.48][A[A
+
+Train epoch [4]:  50%|█████     | 5/10 [00:01<00:01,  3.82it/s, reward=-1.39][A[A
+
+Train epoch [4]:  60%|██████    | 6/10 [00:01<00:01,  3.82it/s, reward=-1.39][A[A
+
+Train epoch [4]:  60%|██████    | 6/10 [00:01<00:01,  3.82it/s, reward=-1.3] [A[A
+
+Train epoch [4]:  70%|███████   | 7/10 [00:01<00:00,  3.82it/s, reward=-1.3][A[A
+
+Train epoch [4]:  70%|███████   | 7/10 [00:02<00:00,  3.82it/s, reward=-1.45][A[A
+
+Train epoch [4]:  80%|████████  | 8/10 [00:02<00:00,  3.82it/s, reward=-1.45][A[A
+
+Train epoch [4]:  80%|████████  | 8/10 [00:02<00:00,  3.82it/s, reward=-1.45][A[A
+
+Train epoch [4]:  90%|█████████ | 9/10 [00:02<00:00,  3.82it/s, reward=-1.45][A[A
+
+Train epoch [4]:  90%|█████████ | 9/10 [00:02<00:00,  3.82it/s, reward=-1.46][A[A
+
+Train epoch [4]: 100%|██████████| 10/10 [00:02<00:00,  3.82it/s, reward=-1.46][A[ATrain epoch [4]: 100%|██████████| 10/10 [00:02<00:00,  3.82it/s, reward=-1.46]
+
+Update steps:  80%|████████  | 4/5 [00:10<00:02,  2.65s/it][A
+
+Train epoch [5]:   0%|          | 0/10 [00:00<?, ?it/s][A[A
+
+Train epoch [5]:   0%|          | 0/10 [00:00<?, ?it/s, reward=-1.46][A[A
+
+Train epoch [5]:  10%|█         | 1/10 [00:00<00:02,  3.82it/s, reward=-1.46][A[A
+
+Train epoch [5]:  10%|█         | 1/10 [00:00<00:02,  3.82it/s, reward=-1.42][A[A
+
+Train epoch [5]:  20%|██        | 2/10 [00:00<00:02,  3.82it/s, reward=-1.42][A[A
+
+Train epoch [5]:  20%|██        | 2/10 [00:00<00:02,  3.82it/s, reward=-1.34][A[A
+
+Train epoch [5]:  30%|███       | 3/10 [00:00<00:01,  3.82it/s, reward=-1.34][A[A
+
+Train epoch [5]:  30%|███       | 3/10 [00:01<00:01,  3.82it/s, reward=-1.53][A[A
+
+Train epoch [5]:  40%|████      | 4/10 [00:01<00:01,  3.82it/s, reward=-1.53][A[A
+
+Train epoch [5]:  40%|████      | 4/10 [00:01<00:01,  3.82it/s, reward=-1.53][A[A
+
+Train epoch [5]:  50%|█████     | 5/10 [00:01<00:01,  3.82it/s, reward=-1.53][A[A
+
+Train epoch [5]:  50%|█████     | 5/10 [00:01<00:01,  3.82it/s, reward=-1.46][A[A
+
+Train epoch [5]:  60%|██████    | 6/10 [00:01<00:01,  3.82it/s, reward=-1.46][A[A
+
+Train epoch [5]:  60%|██████    | 6/10 [00:01<00:01,  3.82it/s, reward=-1.38][A[A
+
+Train epoch [5]:  70%|███████   | 7/10 [00:01<00:00,  3.82it/s, reward=-1.38][A[A
+
+Train epoch [5]:  70%|███████   | 7/10 [00:02<00:00,  3.82it/s, reward=-1.49][A[A
+
+Train epoch [5]:  80%|████████  | 8/10 [00:02<00:00,  3.82it/s, reward=-1.49][A[A
+
+Train epoch [5]:  80%|████████  | 8/10 [00:02<00:00,  3.82it/s, reward=-1.46][A[A
+
+Train epoch [5]:  90%|█████████ | 9/10 [00:02<00:00,  3.82it/s, reward=-1.46][A[A
+
+Train epoch [5]:  90%|█████████ | 9/10 [00:02<00:00,  3.82it/s, reward=-1.2] [A[A
+
+Train epoch [5]: 100%|██████████| 10/10 [00:02<00:00,  3.82it/s, reward=-1.2][A[ATrain epoch [5]: 100%|██████████| 10/10 [00:02<00:00,  3.82it/s, reward=-1.2]
+
+Update steps: 100%|██████████| 5/5 [00:13<00:00,  2.64s/it][AUpdate steps: 100%|██████████| 5/5 [00:13<00:00,  2.67s/it]
+Episodes:  10%|█         | 1/10 [02:54<26:09, 174.33s/it]
+Collect steps:   0%|          | 0/10 [00:00<?, ?it/s][A
+Collect steps:  10%|█         | 1/10 [00:16<02:24, 16.00s/it][A
+Collect steps:  20%|██        | 2/10 [00:31<02:06, 15.80s/it][A
+Collect steps:  30%|███       | 3/10 [00:47<01:50, 15.76s/it][A
+Collect steps:  40%|████      | 4/10 [01:03<01:34, 15.74s/it][A
+Collect steps:  50%|█████     | 5/10 [01:18<01:18, 15.74s/it][A
+Collect steps:  60%|██████    | 6/10 [01:34<01:02, 15.72s/it][A
+Collect steps:  70%|███████   | 7/10 [01:50<00:47, 15.72s/it][A
+Collect steps:  80%|████████  | 8/10 [02:06<00:31, 15.82s/it][A
+Collect steps:  90%|█████████ | 9/10 [02:22<00:16, 16.00s/it][A
+Collect steps: 100%|██████████| 10/10 [02:39<00:00, 16.13s/it][ACollect steps: 100%|██████████| 10/10 [02:39<00:00, 15.91s/it]
+
+Update steps:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+Train epoch [1]:   0%|          | 0/10 [00:00<?, ?it/s][A[A
+
+Train epoch [1]:   0%|          | 0/10 [00:00<?, ?it/s, reward=-1.53][A[A
+
+Train epoch [1]:  10%|█         | 1/10 [00:00<00:02,  3.81it/s, reward=-1.53][A[A
+
+Train epoch [1]:  10%|█         | 1/10 [00:00<00:02,  3.81it/s, reward=-1.28][A[A
+
+Train epoch [1]:  20%|██        | 2/10 [00:00<00:02,  3.82it/s, reward=-1.28][A[A
+
+Train epoch [1]:  20%|██        | 2/10 [00:00<00:02,  3.82it/s, reward=-1.4] [A[A
+
+Train epoch [1]:  30%|███       | 3/10 [00:00<00:01,  3.81it/s, reward=-1.4][A[A
+
+Train epoch [1]:  30%|███       | 3/10 [00:01<00:01,  3.81it/s, reward=-1.4][A[A
+
+Train epoch [1]:  40%|████      | 4/10 [00:01<00:01,  3.81it/s, reward=-1.4][A[A
+
+Train epoch [1]:  40%|████      | 4/10 [00:01<00:01,  3.81it/s, reward=-1.62][A[A
+
+Train epoch [1]:  50%|█████     | 5/10 [00:01<00:01,  3.82it/s, reward=-1.62][A[A
+
+Train epoch [1]:  50%|█████     | 5/10 [00:01<00:01,  3.82it/s, reward=-1.34][A[A
+
+Train epoch [1]:  60%|██████    | 6/10 [00:01<00:01,  3.81it/s, reward=-1.34][A[A
+
+Train epoch [1]:  60%|██████    | 6/10 [00:01<00:01,  3.81it/s, reward=-1.51][A[A
+
+Train epoch [1]:  70%|███████   | 7/10 [00:01<00:00,  3.81it/s, reward=-1.51][A[A
+
+Train epoch [1]:  70%|███████   | 7/10 [00:02<00:00,  3.81it/s, reward=-1.45][A[A
+
+Train epoch [1]:  80%|████████  | 8/10 [00:02<00:00,  3.81it/s, reward=-1.45][A[A
+
+Train epoch [1]:  80%|████████  | 8/10 [00:02<00:00,  3.81it/s, reward=-1.37][A[A
+
+Train epoch [1]:  90%|█████████ | 9/10 [00:02<00:00,  3.30it/s, reward=-1.37][A[A
+
+Train epoch [1]:  90%|█████████ | 9/10 [00:02<00:00,  3.30it/s, reward=-1.38][A[A
+
+Train epoch [1]: 100%|██████████| 10/10 [00:02<00:00,  3.44it/s, reward=-1.38][A[ATrain epoch [1]: 100%|██████████| 10/10 [00:02<00:00,  3.63it/s, reward=-1.38]
+
+Update steps:  20%|██        | 1/5 [00:03<00:12,  3.03s/it][A
+
+Train epoch [2]:   0%|          | 0/10 [00:00<?, ?it/s][A[A
+
+Train epoch [2]:   0%|          | 0/10 [00:00<?, ?it/s, reward=-1.49][A[A
+
+Train epoch [2]:  10%|█         | 1/10 [00:00<00:02,  3.80it/s, reward=-1.49][A[A
+
+Train epoch [2]:  10%|█         | 1/10 [00:00<00:02,  3.80it/s, reward=-1.44][A[A
+
+Train epoch [2]:  20%|██        | 2/10 [00:00<00:02,  3.81it/s, reward=-1.44][A[A
+
+Train epoch [2]:  20%|██        | 2/10 [00:00<00:02,  3.81it/s, reward=-1.37][A[A
+
+Train epoch [2]:  30%|███       | 3/10 [00:00<00:01,  3.81it/s, reward=-1.37][A[A
+
+Train epoch [2]:  30%|███       | 3/10 [00:01<00:01,  3.81it/s, reward=-1.45][A[A
+
+Train epoch [2]:  40%|████      | 4/10 [00:01<00:01,  3.81it/s, reward=-1.45][A[A
+
+Train epoch [2]:  40%|████      | 4/10 [00:01<00:01,  3.81it/s, reward=-1.39][A[A
+
+Train epoch [2]:  50%|█████     | 5/10 [00:01<00:01,  3.81it/s, reward=-1.39][A[A
+
+Train epoch [2]:  50%|█████     | 5/10 [00:01<00:01,  3.81it/s, reward=-1.31][A[A
+
+Train epoch [2]:  60%|██████    | 6/10 [00:01<00:01,  3.81it/s, reward=-1.31][A[A
+
+Train epoch [2]:  60%|██████    | 6/10 [00:01<00:01,  3.81it/s, reward=-1.36][A[A
+
+Train epoch [2]:  70%|███████   | 7/10 [00:01<00:00,  3.81it/s, reward=-1.36][A[A
+
+Train epoch [2]:  70%|███████   | 7/10 [00:02<00:00,  3.81it/s, reward=-1.55][A[A
+
+Train epoch [2]:  80%|████████  | 8/10 [00:02<00:00,  3.81it/s, reward=-1.55][A[A
+
+Train epoch [2]:  80%|████████  | 8/10 [00:02<00:00,  3.81it/s, reward=-1.35][A[A
+
+Train epoch [2]:  90%|█████████ | 9/10 [00:02<00:00,  3.81it/s, reward=-1.35][A[A
+
+Train epoch [2]:  90%|█████████ | 9/10 [00:02<00:00,  3.81it/s, reward=-1.57][A[A
+
+Train epoch [2]: 100%|██████████| 10/10 [00:02<00:00,  3.81it/s, reward=-1.57][A[ATrain epoch [2]: 100%|██████████| 10/10 [00:02<00:00,  3.81it/s, reward=-1.57]
+
+Update steps:  40%|████      | 2/5 [00:05<00:08,  2.79s/it][A
+
+Train epoch [3]:   0%|          | 0/10 [00:00<?, ?it/s][A[A
+
+Train epoch [3]:   0%|          | 0/10 [00:00<?, ?it/s, reward=-1.37][A[A
+
+Train epoch [3]:  10%|█         | 1/10 [00:00<00:02,  3.81it/s, reward=-1.37][A[A
+
+Train epoch [3]:  10%|█         | 1/10 [00:00<00:02,  3.81it/s, reward=-1.31][A[A
+
+Train epoch [3]:  20%|██        | 2/10 [00:00<00:02,  3.81it/s, reward=-1.31][A[A
+
+Train epoch [3]:  20%|██        | 2/10 [00:00<00:02,  3.81it/s, reward=-1.38][A[A
+
+Train epoch [3]:  30%|███       | 3/10 [00:00<00:01,  3.82it/s, reward=-1.38][A[A
+
+Train epoch [3]:  30%|███       | 3/10 [00:01<00:01,  3.82it/s, reward=-1.59][A[A
+
+Train epoch [3]:  40%|████      | 4/10 [00:01<00:01,  3.82it/s, reward=-1.59][A[A
+
+Train epoch [3]:  40%|████      | 4/10 [00:01<00:01,  3.82it/s, reward=-1.35][A[A
+
+Train epoch [3]:  50%|█████     | 5/10 [00:01<00:01,  3.82it/s, reward=-1.35][A[A
+
+Train epoch [3]:  50%|█████     | 5/10 [00:01<00:01,  3.82it/s, reward=-1.55][A[A
+
+Train epoch [3]:  60%|██████    | 6/10 [00:01<00:01,  3.82it/s, reward=-1.55][A[A
+
+Train epoch [3]:  60%|██████    | 6/10 [00:01<00:01,  3.82it/s, reward=-1.44][A[A
+
+Train epoch [3]:  70%|███████   | 7/10 [00:01<00:00,  3.82it/s, reward=-1.44][A[A
+
+Train epoch [3]:  70%|███████   | 7/10 [00:02<00:00,  3.82it/s, reward=-1.35][A[A
+
+Train epoch [3]:  80%|████████  | 8/10 [00:02<00:00,  3.82it/s, reward=-1.35][A[A
+
+Train epoch [3]:  80%|████████  | 8/10 [00:02<00:00,  3.82it/s, reward=-1.5] [A[A
+
+Train epoch [3]:  90%|█████████ | 9/10 [00:02<00:00,  3.82it/s, reward=-1.5][A[A
+
+Train epoch [3]:  90%|█████████ | 9/10 [00:02<00:00,  3.82it/s, reward=-1.45][A[A
+
+Train epoch [3]: 100%|██████████| 10/10 [00:02<00:00,  3.82it/s, reward=-1.45][A[ATrain epoch [3]: 100%|██████████| 10/10 [00:02<00:00,  3.82it/s, reward=-1.45]
+
+Update steps:  60%|██████    | 3/5 [00:08<00:05,  2.72s/it][A
+
+Train epoch [4]:   0%|          | 0/10 [00:00<?, ?it/s][A[A
+
+Train epoch [4]:   0%|          | 0/10 [00:00<?, ?it/s, reward=-1.6][A[A
+
+Train epoch [4]:  10%|█         | 1/10 [00:00<00:02,  3.82it/s, reward=-1.6][A[A
+
+Train epoch [4]:  10%|█         | 1/10 [00:00<00:02,  3.82it/s, reward=-1.46][A[A
+
+Train epoch [4]:  20%|██        | 2/10 [00:00<00:02,  3.81it/s, reward=-1.46][A[A
+
+Train epoch [4]:  20%|██        | 2/10 [00:00<00:02,  3.81it/s, reward=-1.4] [A[A
+
+Train epoch [4]:  30%|███       | 3/10 [00:00<00:01,  3.81it/s, reward=-1.4][A[A
+
+Train epoch [4]:  30%|███       | 3/10 [00:01<00:01,  3.81it/s, reward=-1.45][A[A
+
+Train epoch [4]:  40%|████      | 4/10 [00:01<00:01,  3.81it/s, reward=-1.45][A[A
+
+Train epoch [4]:  40%|████      | 4/10 [00:01<00:01,  3.81it/s, reward=-1.4] [A[A
+
+Train epoch [4]:  50%|█████     | 5/10 [00:01<00:01,  3.81it/s, reward=-1.4][A[A
+
+Train epoch [4]:  50%|█████     | 5/10 [00:01<00:01,  3.81it/s, reward=-1.28][A[A
+
+Train epoch [4]:  60%|██████    | 6/10 [00:01<00:01,  3.81it/s, reward=-1.28][A[A
+
+Train epoch [4]:  60%|██████    | 6/10 [00:01<00:01,  3.81it/s, reward=-1.41][A[A
+
+Train epoch [4]:  70%|███████   | 7/10 [00:01<00:00,  3.81it/s, reward=-1.41][A[A
+
+Train epoch [4]:  70%|███████   | 7/10 [00:02<00:00,  3.81it/s, reward=-1.41][A[A
+
+Train epoch [4]:  80%|████████  | 8/10 [00:02<00:00,  3.81it/s, reward=-1.41][A[A
+
+Train epoch [4]:  80%|████████  | 8/10 [00:02<00:00,  3.81it/s, reward=-1.32][A[A
+
+Train epoch [4]:  90%|█████████ | 9/10 [00:02<00:00,  3.81it/s, reward=-1.32][A[A
+
+Train epoch [4]:  90%|█████████ | 9/10 [00:02<00:00,  3.81it/s, reward=-1.54][A[A
+
+Train epoch [4]: 100%|██████████| 10/10 [00:02<00:00,  3.81it/s, reward=-1.54][A[ATrain epoch [4]: 100%|██████████| 10/10 [00:02<00:00,  3.81it/s, reward=-1.54]
+
+Update steps:  80%|████████  | 4/5 [00:10<00:02,  2.68s/it][A
+
+Train epoch [5]:   0%|          | 0/10 [00:00<?, ?it/s][A[A
+
+Train epoch [5]:   0%|          | 0/10 [00:00<?, ?it/s, reward=-1.47][A[A
+
+Train epoch [5]:  10%|█         | 1/10 [00:00<00:02,  3.80it/s, reward=-1.47][A[A
+
+Train epoch [5]:  10%|█         | 1/10 [00:00<00:02,  3.80it/s, reward=-1.36][A[A
+
+Train epoch [5]:  20%|██        | 2/10 [00:00<00:02,  3.81it/s, reward=-1.36][A[A
+
+Train epoch [5]:  20%|██        | 2/10 [00:00<00:02,  3.81it/s, reward=-1.35][A[A
+
+Train epoch [5]:  30%|███       | 3/10 [00:00<00:01,  3.81it/s, reward=-1.35][A[A
+
+Train epoch [5]:  30%|███       | 3/10 [00:01<00:01,  3.81it/s, reward=-1.38][A[A
+
+Train epoch [5]:  40%|████      | 4/10 [00:01<00:01,  3.82it/s, reward=-1.38][A[A
+
+Train epoch [5]:  40%|████      | 4/10 [00:01<00:01,  3.82it/s, reward=-1.39][A[A
+
+Train epoch [5]:  50%|█████     | 5/10 [00:01<00:01,  3.81it/s, reward=-1.39][A[A
+
+Train epoch [5]:  50%|█████     | 5/10 [00:01<00:01,  3.81it/s, reward=-1.52][A[A
+
+Train epoch [5]:  60%|██████    | 6/10 [00:01<00:01,  3.82it/s, reward=-1.52][A[A
+
+Train epoch [5]:  60%|██████    | 6/10 [00:01<00:01,  3.82it/s, reward=-1.36][A[A
+
+Train epoch [5]:  70%|███████   | 7/10 [00:01<00:00,  3.82it/s, reward=-1.36][A[A
+
+Train epoch [5]:  70%|███████   | 7/10 [00:02<00:00,  3.82it/s, reward=-1.4] [A[A
+
+Train epoch [5]:  80%|████████  | 8/10 [00:02<00:00,  3.82it/s, reward=-1.4][A[A
+
+Train epoch [5]:  80%|████████  | 8/10 [00:02<00:00,  3.82it/s, reward=-1.54][A[A
+
+Train epoch [5]:  90%|█████████ | 9/10 [00:02<00:00,  3.81it/s, reward=-1.54][A[A
+
+Train epoch [5]:  90%|█████████ | 9/10 [00:02<00:00,  3.81it/s, reward=-1.5] [A[A
+
+Train epoch [5]: 100%|██████████| 10/10 [00:02<00:00,  3.82it/s, reward=-1.5][A[ATrain epoch [5]: 100%|██████████| 10/10 [00:02<00:00,  3.81it/s, reward=-1.5]
+
+Update steps: 100%|██████████| 5/5 [00:13<00:00,  2.66s/it][AUpdate steps: 100%|██████████| 5/5 [00:13<00:00,  2.71s/it]
+Episodes:  20%|██        | 2/10 [05:46<23:06, 173.31s/it]
+Collect steps:   0%|          | 0/10 [00:00<?, ?it/s][A
+Collect steps:  10%|█         | 1/10 [00:16<02:29, 16.66s/it][A
+Collect steps:  20%|██        | 2/10 [00:33<02:12, 16.54s/it][A
+Collect steps:  30%|███       | 3/10 [00:49<01:55, 16.47s/it][A
+Collect steps:  40%|████      | 4/10 [01:05<01:37, 16.31s/it][A
+Collect steps:  50%|█████     | 5/10 [01:22<01:21, 16.35s/it][A
+Collect steps:  60%|██████    | 6/10 [01:38<01:05, 16.31s/it][A
+Collect steps:  70%|███████   | 7/10 [01:54<00:48, 16.18s/it][A
+Collect steps:  80%|████████  | 8/10 [02:09<00:32, 16.07s/it][A
+Collect steps:  90%|█████████ | 9/10 [02:25<00:16, 16.00s/it][A
+Collect steps: 100%|██████████| 10/10 [02:41<00:00, 15.96s/it][ACollect steps: 100%|██████████| 10/10 [02:41<00:00, 16.17s/it]
+
+Update steps:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+Train epoch [1]:   0%|          | 0/10 [00:00<?, ?it/s][A[A
+
+Train epoch [1]:   0%|          | 0/10 [00:00<?, ?it/s, reward=-1.42][A[A
+
+Train epoch [1]:  10%|█         | 1/10 [00:00<00:02,  3.82it/s, reward=-1.42][A[A
+
+Train epoch [1]:  10%|█         | 1/10 [00:00<00:02,  3.82it/s, reward=-1.35][A[A
+
+Train epoch [1]:  20%|██        | 2/10 [00:00<00:02,  3.83it/s, reward=-1.35][A[A
+
+Train epoch [1]:  20%|██        | 2/10 [00:00<00:02,  3.83it/s, reward=-1.37][A[A
+
+Train epoch [1]:  30%|███       | 3/10 [00:00<00:01,  3.83it/s, reward=-1.37][A[A
+
+Train epoch [1]:  30%|███       | 3/10 [00:01<00:01,  3.83it/s, reward=-1.42][A[A
+
+Train epoch [1]:  40%|████      | 4/10 [00:01<00:01,  3.83it/s, reward=-1.42][A[A
+
+Train epoch [1]:  40%|████      | 4/10 [00:01<00:01,  3.83it/s, reward=-1.38][A[A
+
+Train epoch [1]:  50%|█████     | 5/10 [00:01<00:01,  3.83it/s, reward=-1.38][A[A
+
+Train epoch [1]:  50%|█████     | 5/10 [00:01<00:01,  3.83it/s, reward=-1.21][A[A
+
+Train epoch [1]:  60%|██████    | 6/10 [00:01<00:01,  3.82it/s, reward=-1.21][A[A
+
+Train epoch [1]:  60%|██████    | 6/10 [00:01<00:01,  3.82it/s, reward=-1.47][A[A
+
+Train epoch [1]:  70%|███████   | 7/10 [00:01<00:00,  3.82it/s, reward=-1.47][A[A
+
+Train epoch [1]:  70%|███████   | 7/10 [00:02<00:00,  3.82it/s, reward=-1.18][A[A
+
+Train epoch [1]:  80%|████████  | 8/10 [00:02<00:00,  3.83it/s, reward=-1.18][A[A
+
+Train epoch [1]:  80%|████████  | 8/10 [00:02<00:00,  3.83it/s, reward=-1.52][A[A
+
+Train epoch [1]:  90%|█████████ | 9/10 [00:02<00:00,  3.83it/s, reward=-1.52][A[A
+
+Train epoch [1]:  90%|█████████ | 9/10 [00:02<00:00,  3.83it/s, reward=-1.59][A[A
+
+Train epoch [1]: 100%|██████████| 10/10 [00:02<00:00,  3.83it/s, reward=-1.59][A[ATrain epoch [1]: 100%|██████████| 10/10 [00:02<00:00,  3.83it/s, reward=-1.59]
+
+Update steps:  20%|██        | 1/5 [00:02<00:11,  2.88s/it][A
+
+Train epoch [2]:   0%|          | 0/10 [00:00<?, ?it/s][A[A
+
+Train epoch [2]:   0%|          | 0/10 [00:00<?, ?it/s, reward=-1.44][A[A
+
+Train epoch [2]:  10%|█         | 1/10 [00:00<00:02,  3.83it/s, reward=-1.44][A[A
+
+Train epoch [2]:  10%|█         | 1/10 [00:00<00:02,  3.83it/s, reward=-1.46][A[A
+
+Train epoch [2]:  20%|██        | 2/10 [00:00<00:02,  3.84it/s, reward=-1.46][A[A
+
+Train epoch [2]:  20%|██        | 2/10 [00:00<00:02,  3.84it/s, reward=-1.46][A[A
+
+Train epoch [2]:  30%|███       | 3/10 [00:00<00:01,  3.83it/s, reward=-1.46][A[A
+
+Train epoch [2]:  30%|███       | 3/10 [00:01<00:01,  3.83it/s, reward=-1.38][A[A
+
+Train epoch [2]:  40%|████      | 4/10 [00:01<00:01,  3.83it/s, reward=-1.38][A[A
+
+Train epoch [2]:  40%|████      | 4/10 [00:01<00:01,  3.83it/s, reward=-1.3] [A[A
+
+Train epoch [2]:  50%|█████     | 5/10 [00:01<00:01,  3.83it/s, reward=-1.3][A[A
+
+Train epoch [2]:  50%|█████     | 5/10 [00:01<00:01,  3.83it/s, reward=-1.43][A[A
+
+Train epoch [2]:  60%|██████    | 6/10 [00:01<00:01,  3.83it/s, reward=-1.43][A[A
+
+Train epoch [2]:  60%|██████    | 6/10 [00:01<00:01,  3.83it/s, reward=-1.3] [A[A
+
+Train epoch [2]:  70%|███████   | 7/10 [00:01<00:00,  3.84it/s, reward=-1.3][A[A
+
+Train epoch [2]:  70%|███████   | 7/10 [00:02<00:00,  3.84it/s, reward=-1.29][A[A
+
+Train epoch [2]:  80%|████████  | 8/10 [00:02<00:00,  3.83it/s, reward=-1.29][A[A
+
+Train epoch [2]:  80%|████████  | 8/10 [00:02<00:00,  3.83it/s, reward=-1.46][A[A
+
+Train epoch [2]:  90%|█████████ | 9/10 [00:02<00:00,  3.84it/s, reward=-1.46][A[A
+
+Train epoch [2]:  90%|█████████ | 9/10 [00:02<00:00,  3.84it/s, reward=-1.39][A[A
+
+Train epoch [2]: 100%|██████████| 10/10 [00:02<00:00,  3.84it/s, reward=-1.39][A[ATrain epoch [2]: 100%|██████████| 10/10 [00:02<00:00,  3.84it/s, reward=-1.39]
+
+Update steps:  40%|████      | 2/5 [00:05<00:08,  2.72s/it][A
+
+Train epoch [3]:   0%|          | 0/10 [00:00<?, ?it/s][A[A
+
+Train epoch [3]:   0%|          | 0/10 [00:00<?, ?it/s, reward=-1.3][A[A
+
+Train epoch [3]:  10%|█         | 1/10 [00:00<00:02,  3.83it/s, reward=-1.3][A[A
+
+Train epoch [3]:  10%|█         | 1/10 [00:00<00:02,  3.83it/s, reward=-1.28][A[A
+
+Train epoch [3]:  20%|██        | 2/10 [00:00<00:02,  3.82it/s, reward=-1.28][A[A
+
+Train epoch [3]:  20%|██        | 2/10 [00:00<00:02,  3.82it/s, reward=-1.45][A[A
+
+Train epoch [3]:  30%|███       | 3/10 [00:00<00:01,  3.83it/s, reward=-1.45][A[A
+
+Train epoch [3]:  30%|███       | 3/10 [00:01<00:01,  3.83it/s, reward=-1.33][A[A
+
+Train epoch [3]:  40%|████      | 4/10 [00:01<00:01,  3.83it/s, reward=-1.33][A[A
+
+Train epoch [3]:  40%|████      | 4/10 [00:01<00:01,  3.83it/s, reward=-1.45][A[A
+
+Train epoch [3]:  50%|█████     | 5/10 [00:01<00:01,  3.83it/s, reward=-1.45][A[A
+
+Train epoch [3]:  50%|█████     | 5/10 [00:01<00:01,  3.83it/s, reward=-1.54][A[A
+
+Train epoch [3]:  60%|██████    | 6/10 [00:01<00:01,  3.83it/s, reward=-1.54][A[A
+
+Train epoch [3]:  60%|██████    | 6/10 [00:01<00:01,  3.83it/s, reward=-1.32][A[A
+
+Train epoch [3]:  70%|███████   | 7/10 [00:01<00:00,  3.83it/s, reward=-1.32][A[A
+
+Train epoch [3]:  70%|███████   | 7/10 [00:02<00:00,  3.83it/s, reward=-1.38][A[A
+
+Train epoch [3]:  80%|████████  | 8/10 [00:02<00:00,  3.83it/s, reward=-1.38][A[A
+
+Train epoch [3]:  80%|████████  | 8/10 [00:02<00:00,  3.83it/s, reward=-1.44][A[A
+
+Train epoch [3]:  90%|█████████ | 9/10 [00:02<00:00,  3.82it/s, reward=-1.44][A[A
+
+Train epoch [3]:  90%|█████████ | 9/10 [00:02<00:00,  3.82it/s, reward=-1.43][A[A
+
+Train epoch [3]: 100%|██████████| 10/10 [00:02<00:00,  3.83it/s, reward=-1.43][A[ATrain epoch [3]: 100%|██████████| 10/10 [00:02<00:00,  3.83it/s, reward=-1.43]
+
+Update steps:  60%|██████    | 3/5 [00:08<00:05,  2.67s/it][A
+
+Train epoch [4]:   0%|          | 0/10 [00:00<?, ?it/s][A[A
+
+Train epoch [4]:   0%|          | 0/10 [00:00<?, ?it/s, reward=-1.32][A[A
+
+Train epoch [4]:  10%|█         | 1/10 [00:00<00:02,  3.83it/s, reward=-1.32][A[A
+
+Train epoch [4]:  10%|█         | 1/10 [00:00<00:02,  3.83it/s, reward=-1.34][A[A
+
+Train epoch [4]:  20%|██        | 2/10 [00:00<00:02,  3.83it/s, reward=-1.34][A[A
+
+Train epoch [4]:  20%|██        | 2/10 [00:00<00:02,  3.83it/s, reward=-1.47][A[A
+
+Train epoch [4]:  30%|███       | 3/10 [00:00<00:01,  3.83it/s, reward=-1.47][A[A
+
+Train epoch [4]:  30%|███       | 3/10 [00:01<00:01,  3.83it/s, reward=-1.44][A[A
+
+Train epoch [4]:  40%|████      | 4/10 [00:01<00:01,  3.83it/s, reward=-1.44][A[A
+
+Train epoch [4]:  40%|████      | 4/10 [00:01<00:01,  3.83it/s, reward=-1.19][A[A
+
+Train epoch [4]:  50%|█████     | 5/10 [00:01<00:01,  3.83it/s, reward=-1.19][A[A
+
+Train epoch [4]:  50%|█████     | 5/10 [00:01<00:01,  3.83it/s, reward=-1.37][A[A
+
+Train epoch [4]:  60%|██████    | 6/10 [00:01<00:01,  3.84it/s, reward=-1.37][A[A
+
+Train epoch [4]:  60%|██████    | 6/10 [00:01<00:01,  3.84it/s, reward=-1.5] [A[A
+
+Train epoch [4]:  70%|███████   | 7/10 [00:01<00:00,  3.83it/s, reward=-1.5][A[A
+
+Train epoch [4]:  70%|███████   | 7/10 [00:02<00:00,  3.83it/s, reward=-1.42][A[A
+
+Train epoch [4]:  80%|████████  | 8/10 [00:02<00:00,  3.83it/s, reward=-1.42][A[A
+
+Train epoch [4]:  80%|████████  | 8/10 [00:02<00:00,  3.83it/s, reward=-1.43][A[A
+
+Train epoch [4]:  90%|█████████ | 9/10 [00:02<00:00,  3.83it/s, reward=-1.43][A[A
+
+Train epoch [4]:  90%|█████████ | 9/10 [00:02<00:00,  3.83it/s, reward=-1.43][A[A
+
+Train epoch [4]: 100%|██████████| 10/10 [00:02<00:00,  3.83it/s, reward=-1.43][A[ATrain epoch [4]: 100%|██████████| 10/10 [00:02<00:00,  3.83it/s, reward=-1.43]
+
+Update steps:  80%|████████  | 4/5 [00:10<00:02,  2.65s/it][A
+
+Train epoch [5]:   0%|          | 0/10 [00:00<?, ?it/s][A[A
+
+Train epoch [5]:   0%|          | 0/10 [00:00<?, ?it/s, reward=-1.34][A[A
+
+Train epoch [5]:  10%|█         | 1/10 [00:00<00:02,  3.83it/s, reward=-1.34][A[A
+
+Train epoch [5]:  10%|█         | 1/10 [00:00<00:02,  3.83it/s, reward=-1.33][A[A
+
+Train epoch [5]:  20%|██        | 2/10 [00:00<00:02,  3.84it/s, reward=-1.33][A[A
+
+Train epoch [5]:  20%|██        | 2/10 [00:00<00:02,  3.84it/s, reward=-1.36][A[A
+
+Train epoch [5]:  30%|███       | 3/10 [00:00<00:01,  3.84it/s, reward=-1.36][A[A
+
+Train epoch [5]:  30%|███       | 3/10 [00:01<00:01,  3.84it/s, reward=-1.44][A[A
+
+Train epoch [5]:  40%|████      | 4/10 [00:01<00:01,  3.84it/s, reward=-1.44][A[A
+
+Train epoch [5]:  40%|████      | 4/10 [00:01<00:01,  3.84it/s, reward=-1.53][A[A
+
+Train epoch [5]:  50%|█████     | 5/10 [00:01<00:01,  3.83it/s, reward=-1.53][A[A
+
+Train epoch [5]:  50%|█████     | 5/10 [00:01<00:01,  3.83it/s, reward=-1.36][A[A
+
+Train epoch [5]:  60%|██████    | 6/10 [00:01<00:01,  3.83it/s, reward=-1.36][A[A
+
+Train epoch [5]:  60%|██████    | 6/10 [00:01<00:01,  3.83it/s, reward=-1.36][A[A
+
+Train epoch [5]:  70%|███████   | 7/10 [00:01<00:00,  3.83it/s, reward=-1.36][A[A
+
+Train epoch [5]:  70%|███████   | 7/10 [00:02<00:00,  3.83it/s, reward=-1.42][A[A
+
+Train epoch [5]:  80%|████████  | 8/10 [00:02<00:00,  3.83it/s, reward=-1.42][A[A
+
+Train epoch [5]:  80%|████████  | 8/10 [00:02<00:00,  3.83it/s, reward=-1.36][A[A
+
+Train epoch [5]:  90%|█████████ | 9/10 [00:02<00:00,  3.83it/s, reward=-1.36][A[A
+
+Train epoch [5]:  90%|█████████ | 9/10 [00:02<00:00,  3.83it/s, reward=-1.41][A[A
+
+Train epoch [5]: 100%|██████████| 10/10 [00:02<00:00,  3.83it/s, reward=-1.41][A[ATrain epoch [5]: 100%|██████████| 10/10 [00:02<00:00,  3.83it/s, reward=-1.41]
+
+Update steps: 100%|██████████| 5/5 [00:13<00:00,  2.64s/it][AUpdate steps: 100%|██████████| 5/5 [00:13<00:00,  2.67s/it]
+Episodes:  30%|███       | 3/10 [08:41<20:18, 174.11s/it]
+Collect steps:   0%|          | 0/10 [00:00<?, ?it/s][A
+Collect steps:  10%|█         | 1/10 [00:16<02:24, 16.03s/it][A
+Collect steps:  20%|██        | 2/10 [00:31<02:07, 15.96s/it][A
+Collect steps:  30%|███       | 3/10 [00:47<01:51, 15.91s/it][A
+Collect steps:  40%|████      | 4/10 [01:03<01:35, 15.89s/it][A
+Collect steps:  50%|█████     | 5/10 [01:19<01:19, 15.86s/it][A
+Collect steps:  60%|██████    | 6/10 [01:35<01:03, 15.84s/it][A
+Collect steps:  70%|███████   | 7/10 [01:51<00:47, 15.84s/it][A
+Collect steps:  80%|████████  | 8/10 [02:06<00:31, 15.82s/it][A
+Collect steps:  90%|█████████ | 9/10 [02:22<00:15, 15.83s/it][A
+Collect steps: 100%|██████████| 10/10 [02:38<00:00, 15.81s/it][ACollect steps: 100%|██████████| 10/10 [02:38<00:00, 15.85s/it]
+
+Update steps:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+Train epoch [1]:   0%|          | 0/10 [00:00<?, ?it/s][A[A
+
+Train epoch [1]:   0%|          | 0/10 [00:00<?, ?it/s, reward=-1.39][A[A
+
+Train epoch [1]:  10%|█         | 1/10 [00:00<00:02,  3.81it/s, reward=-1.39][A[A
+
+Train epoch [1]:  10%|█         | 1/10 [00:00<00:02,  3.81it/s, reward=-1.31][A[A
+
+Train epoch [1]:  20%|██        | 2/10 [00:00<00:02,  3.83it/s, reward=-1.31][A[A
+
+Train epoch [1]:  20%|██        | 2/10 [00:00<00:02,  3.83it/s, reward=-1.45][A[A
+
+Train epoch [1]:  30%|███       | 3/10 [00:00<00:01,  3.83it/s, reward=-1.45][A[A
+
+Train epoch [1]:  30%|███       | 3/10 [00:01<00:01,  3.83it/s, reward=-1.34][A[A
+
+Train epoch [1]:  40%|████      | 4/10 [00:01<00:01,  3.83it/s, reward=-1.34][A[A
+
+Train epoch [1]:  40%|████      | 4/10 [00:01<00:01,  3.83it/s, reward=-1.38][A[A
+
+Train epoch [1]:  50%|█████     | 5/10 [00:01<00:01,  3.83it/s, reward=-1.38][A[A
+
+Train epoch [1]:  50%|█████     | 5/10 [00:01<00:01,  3.83it/s, reward=-1.44][A[A
+
+Train epoch [1]:  60%|██████    | 6/10 [00:01<00:01,  3.83it/s, reward=-1.44][A[A
+
+Train epoch [1]:  60%|██████    | 6/10 [00:01<00:01,  3.83it/s, reward=-1.41][A[A
+
+Train epoch [1]:  70%|███████   | 7/10 [00:01<00:00,  3.84it/s, reward=-1.41][A[A
+
+Train epoch [1]:  70%|███████   | 7/10 [00:02<00:00,  3.84it/s, reward=-1.43][A[A
+
+Train epoch [1]:  80%|████████  | 8/10 [00:02<00:00,  3.84it/s, reward=-1.43][A[A
+
+Train epoch [1]:  80%|████████  | 8/10 [00:02<00:00,  3.84it/s, reward=-1.48][A[A
+
+Train epoch [1]:  90%|█████████ | 9/10 [00:02<00:00,  3.84it/s, reward=-1.48][A[A
+
+Train epoch [1]:  90%|█████████ | 9/10 [00:02<00:00,  3.84it/s, reward=-1.4] [A[A
+
+Train epoch [1]: 100%|██████████| 10/10 [00:02<00:00,  3.84it/s, reward=-1.4][A[ATrain epoch [1]: 100%|██████████| 10/10 [00:02<00:00,  3.83it/s, reward=-1.4]
+
+Update steps:  20%|██        | 1/5 [00:02<00:11,  2.88s/it][A
+
+Train epoch [2]:   0%|          | 0/10 [00:00<?, ?it/s][A[A
+
+Train epoch [2]:   0%|          | 0/10 [00:00<?, ?it/s, reward=-1.39][A[A
+
+Train epoch [2]:  10%|█         | 1/10 [00:00<00:02,  3.84it/s, reward=-1.39][A[A
+
+Train epoch [2]:  10%|█         | 1/10 [00:00<00:02,  3.84it/s, reward=-1.27][A[A
+
+Train epoch [2]:  20%|██        | 2/10 [00:00<00:02,  3.84it/s, reward=-1.27][A[A
+
+Train epoch [2]:  20%|██        | 2/10 [00:00<00:02,  3.84it/s, reward=-1.51][A[A
+
+Train epoch [2]:  30%|███       | 3/10 [00:00<00:01,  3.85it/s, reward=-1.51][A[A
+
+Train epoch [2]:  30%|███       | 3/10 [00:01<00:01,  3.85it/s, reward=-1.44][A[A
+
+Train epoch [2]:  40%|████      | 4/10 [00:01<00:01,  3.85it/s, reward=-1.44][A[A
+
+Train epoch [2]:  40%|████      | 4/10 [00:01<00:01,  3.85it/s, reward=-1.4] [A[A
+
+Train epoch [2]:  50%|█████     | 5/10 [00:01<00:01,  3.84it/s, reward=-1.4][A[A
+
+Train epoch [2]:  50%|█████     | 5/10 [00:01<00:01,  3.84it/s, reward=-1.37][A[A
+
+Train epoch [2]:  60%|██████    | 6/10 [00:01<00:01,  3.84it/s, reward=-1.37][A[A
+
+Train epoch [2]:  60%|██████    | 6/10 [00:01<00:01,  3.84it/s, reward=-1.37][A[A
+
+Train epoch [2]:  70%|███████   | 7/10 [00:01<00:00,  3.84it/s, reward=-1.37][A[A
+
+Train epoch [2]:  70%|███████   | 7/10 [00:02<00:00,  3.84it/s, reward=-1.38][A[A
+
+Train epoch [2]:  80%|████████  | 8/10 [00:02<00:00,  3.84it/s, reward=-1.38][A[A
+
+Train epoch [2]:  80%|████████  | 8/10 [00:02<00:00,  3.84it/s, reward=-1.5] [A[A
+
+Train epoch [2]:  90%|█████████ | 9/10 [00:02<00:00,  3.84it/s, reward=-1.5][A[A
+
+Train epoch [2]:  90%|█████████ | 9/10 [00:02<00:00,  3.84it/s, reward=-1.4][A[A
+
+Train epoch [2]: 100%|██████████| 10/10 [00:02<00:00,  3.84it/s, reward=-1.4][A[ATrain epoch [2]: 100%|██████████| 10/10 [00:02<00:00,  3.84it/s, reward=-1.4]
+
+Update steps:  40%|████      | 2/5 [00:05<00:08,  2.72s/it][A
+
+Train epoch [3]:   0%|          | 0/10 [00:00<?, ?it/s][A[A
+
+Train epoch [3]:   0%|          | 0/10 [00:00<?, ?it/s, reward=-1.5][A[A
+
+Train epoch [3]:  10%|█         | 1/10 [00:00<00:02,  3.84it/s, reward=-1.5][A[A
+
+Train epoch [3]:  10%|█         | 1/10 [00:00<00:02,  3.84it/s, reward=-1.44][A[A
+
+Train epoch [3]:  20%|██        | 2/10 [00:00<00:02,  3.83it/s, reward=-1.44][A[A
+
+Train epoch [3]:  20%|██        | 2/10 [00:00<00:02,  3.83it/s, reward=-1.28][A[A
+
+Train epoch [3]:  30%|███       | 3/10 [00:00<00:01,  3.83it/s, reward=-1.28][A[A
+
+Train epoch [3]:  30%|███       | 3/10 [00:01<00:01,  3.83it/s, reward=-1.46][A[A
+
+Train epoch [3]:  40%|████      | 4/10 [00:01<00:01,  3.83it/s, reward=-1.46][A[A
+
+Train epoch [3]:  40%|████      | 4/10 [00:01<00:01,  3.83it/s, reward=-1.29][A[A
+
+Train epoch [3]:  50%|█████     | 5/10 [00:01<00:01,  3.83it/s, reward=-1.29][A[A
+
+Train epoch [3]:  50%|█████     | 5/10 [00:01<00:01,  3.83it/s, reward=-1.43][A[A
+
+Train epoch [3]:  60%|██████    | 6/10 [00:01<00:01,  3.83it/s, reward=-1.43][A[A
+
+Train epoch [3]:  60%|██████    | 6/10 [00:01<00:01,  3.83it/s, reward=-1.27][A[A
+
+Train epoch [3]:  70%|███████   | 7/10 [00:01<00:00,  3.83it/s, reward=-1.27][A[A
+
+Train epoch [3]:  70%|███████   | 7/10 [00:02<00:00,  3.83it/s, reward=-1.4] [A[A
+
+Train epoch [3]:  80%|████████  | 8/10 [00:02<00:00,  3.83it/s, reward=-1.4][A[A
+
+Train epoch [3]:  80%|████████  | 8/10 [00:02<00:00,  3.83it/s, reward=-1.49][A[A
+
+Train epoch [3]:  90%|█████████ | 9/10 [00:02<00:00,  3.83it/s, reward=-1.49][A[A
+
+Train epoch [3]:  90%|█████████ | 9/10 [00:02<00:00,  3.83it/s, reward=-1.46][A[A
+
+Train epoch [3]: 100%|██████████| 10/10 [00:02<00:00,  3.84it/s, reward=-1.46][A[ATrain epoch [3]: 100%|██████████| 10/10 [00:02<00:00,  3.84it/s, reward=-1.46]
+
+Update steps:  60%|██████    | 3/5 [00:08<00:05,  2.67s/it][A
+
+Train epoch [4]:   0%|          | 0/10 [00:00<?, ?it/s][A[A
+
+Train epoch [4]:   0%|          | 0/10 [00:00<?, ?it/s, reward=-1.33][A[A
+
+Train epoch [4]:  10%|█         | 1/10 [00:00<00:02,  3.85it/s, reward=-1.33][A[A
+
+Train epoch [4]:  10%|█         | 1/10 [00:00<00:02,  3.85it/s, reward=-1.46][A[A
+
+Train epoch [4]:  20%|██        | 2/10 [00:00<00:02,  3.84it/s, reward=-1.46][A[A
+
+Train epoch [4]:  20%|██        | 2/10 [00:00<00:02,  3.84it/s, reward=-1.53][A[A
+
+Train epoch [4]:  30%|███       | 3/10 [00:00<00:01,  3.84it/s, reward=-1.53][A[A
+
+Train epoch [4]:  30%|███       | 3/10 [00:01<00:01,  3.84it/s, reward=-1.33][A[A
+
+Train epoch [4]:  40%|████      | 4/10 [00:01<00:01,  3.83it/s, reward=-1.33][A[A
+
+Train epoch [4]:  40%|████      | 4/10 [00:01<00:01,  3.83it/s, reward=-1.37][A[A
+
+Train epoch [4]:  50%|█████     | 5/10 [00:01<00:01,  3.83it/s, reward=-1.37][A[A
+
+Train epoch [4]:  50%|█████     | 5/10 [00:01<00:01,  3.83it/s, reward=-1.39][A[A
+
+Train epoch [4]:  60%|██████    | 6/10 [00:01<00:01,  3.83it/s, reward=-1.39][A[A
+
+Train epoch [4]:  60%|██████    | 6/10 [00:01<00:01,  3.83it/s, reward=-1.47][A[A
+
+Train epoch [4]:  70%|███████   | 7/10 [00:01<00:00,  3.83it/s, reward=-1.47][A[A
+
+Train epoch [4]:  70%|███████   | 7/10 [00:02<00:00,  3.83it/s, reward=-1.46][A[A
+
+Train epoch [4]:  80%|████████  | 8/10 [00:02<00:00,  3.83it/s, reward=-1.46][A[A
+
+Train epoch [4]:  80%|████████  | 8/10 [00:02<00:00,  3.83it/s, reward=-1.41][A[A
+
+Train epoch [4]:  90%|█████████ | 9/10 [00:02<00:00,  3.84it/s, reward=-1.41][A[A
+
+Train epoch [4]:  90%|█████████ | 9/10 [00:02<00:00,  3.84it/s, reward=-1.29][A[A
+
+Train epoch [4]: 100%|██████████| 10/10 [00:02<00:00,  3.84it/s, reward=-1.29][A[ATrain epoch [4]: 100%|██████████| 10/10 [00:02<00:00,  3.84it/s, reward=-1.29]
+
+Update steps:  80%|████████  | 4/5 [00:10<00:02,  2.65s/it][A
+
+Train epoch [5]:   0%|          | 0/10 [00:00<?, ?it/s][A[A
+
+Train epoch [5]:   0%|          | 0/10 [00:00<?, ?it/s, reward=-1.4][A[A
+
+Train epoch [5]:  10%|█         | 1/10 [00:00<00:02,  3.84it/s, reward=-1.4][A[A
+
+Train epoch [5]:  10%|█         | 1/10 [00:00<00:02,  3.84it/s, reward=-1.37][A[A
+
+Train epoch [5]:  20%|██        | 2/10 [00:00<00:02,  3.84it/s, reward=-1.37][A[A
+
+Train epoch [5]:  20%|██        | 2/10 [00:00<00:02,  3.84it/s, reward=-1.48][A[A
+
+Train epoch [5]:  30%|███       | 3/10 [00:00<00:01,  3.85it/s, reward=-1.48][A[A
+
+Train epoch [5]:  30%|███       | 3/10 [00:01<00:01,  3.85it/s, reward=-1.48][A[A
+
+Train epoch [5]:  40%|████      | 4/10 [00:01<00:01,  3.85it/s, reward=-1.48][A[A
+
+Train epoch [5]:  40%|████      | 4/10 [00:01<00:01,  3.85it/s, reward=-1.41][A[A
+
+Train epoch [5]:  50%|█████     | 5/10 [00:01<00:01,  3.84it/s, reward=-1.41][A[A
+
+Train epoch [5]:  50%|█████     | 5/10 [00:01<00:01,  3.84it/s, reward=-1.48][A[A
+
+Train epoch [5]:  60%|██████    | 6/10 [00:01<00:01,  3.84it/s, reward=-1.48][A[A
+
+Train epoch [5]:  60%|██████    | 6/10 [00:01<00:01,  3.84it/s, reward=-1.35][A[A
+
+Train epoch [5]:  70%|███████   | 7/10 [00:01<00:00,  3.84it/s, reward=-1.35][A[A
+
+Train epoch [5]:  70%|███████   | 7/10 [00:02<00:00,  3.84it/s, reward=-1.34][A[A
+
+Train epoch [5]:  80%|████████  | 8/10 [00:02<00:00,  3.84it/s, reward=-1.34][A[A
+
+Train epoch [5]:  80%|████████  | 8/10 [00:02<00:00,  3.84it/s, reward=-1.25][A[A
+
+Train epoch [5]:  90%|█████████ | 9/10 [00:02<00:00,  3.84it/s, reward=-1.25][A[A
+
+Train epoch [5]:  90%|█████████ | 9/10 [00:02<00:00,  3.84it/s, reward=-1.49][A[A
+
+Train epoch [5]: 100%|██████████| 10/10 [00:02<00:00,  3.84it/s, reward=-1.49][A[ATrain epoch [5]: 100%|██████████| 10/10 [00:02<00:00,  3.84it/s, reward=-1.49]
+
+Update steps: 100%|██████████| 5/5 [00:13<00:00,  2.63s/it][AUpdate steps: 100%|██████████| 5/5 [00:13<00:00,  2.66s/it]
+Episodes:  40%|████      | 4/10 [11:33<17:19, 173.20s/it]
+Collect steps:   0%|          | 0/10 [00:00<?, ?it/s][A
+Collect steps:  10%|█         | 1/10 [00:15<02:23, 15.93s/it][A
+Collect steps:  20%|██        | 2/10 [00:31<02:06, 15.80s/it][A
+Collect steps:  30%|███       | 3/10 [00:47<01:50, 15.75s/it][A
+Collect steps:  40%|████      | 4/10 [01:03<01:34, 15.73s/it][A
+Collect steps:  50%|█████     | 5/10 [01:18<01:18, 15.74s/it][A
+Collect steps:  60%|██████    | 6/10 [01:34<01:02, 15.73s/it][A
+Collect steps:  70%|███████   | 7/10 [01:50<00:47, 15.73s/it][A
+Collect steps:  80%|████████  | 8/10 [02:05<00:31, 15.73s/it][A
+Collect steps:  90%|█████████ | 9/10 [02:21<00:15, 15.73s/it][A
+Collect steps: 100%|██████████| 10/10 [02:37<00:00, 15.71s/it][ACollect steps: 100%|██████████| 10/10 [02:37<00:00, 15.74s/it]
+
+Update steps:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+Train epoch [1]:   0%|          | 0/10 [00:00<?, ?it/s][A[A
+
+Train epoch [1]:   0%|          | 0/10 [00:00<?, ?it/s, reward=-1.56][A[A
+
+Train epoch [1]:  10%|█         | 1/10 [00:00<00:02,  3.81it/s, reward=-1.56][A[A
+
+Train epoch [1]:  10%|█         | 1/10 [00:00<00:02,  3.81it/s, reward=-1.6] [A[A
+
+Train epoch [1]:  20%|██        | 2/10 [00:00<00:02,  3.83it/s, reward=-1.6][A[A
+
+Train epoch [1]:  20%|██        | 2/10 [00:00<00:02,  3.83it/s, reward=-1.45][A[A
+
+Train epoch [1]:  30%|███       | 3/10 [00:00<00:01,  3.83it/s, reward=-1.45][A[A
+
+Train epoch [1]:  30%|███       | 3/10 [00:01<00:01,  3.83it/s, reward=-1.5] [A[A
+
+Train epoch [1]:  40%|████      | 4/10 [00:01<00:01,  3.84it/s, reward=-1.5][A[A
+
+Train epoch [1]:  40%|████      | 4/10 [00:01<00:01,  3.84it/s, reward=-1.4][A[A
+
+Train epoch [1]:  50%|█████     | 5/10 [00:01<00:01,  3.83it/s, reward=-1.4][A[A
+
+Train epoch [1]:  50%|█████     | 5/10 [00:01<00:01,  3.83it/s, reward=-1.55][A[A
+
+Train epoch [1]:  60%|██████    | 6/10 [00:01<00:01,  3.84it/s, reward=-1.55][A[A
+
+Train epoch [1]:  60%|██████    | 6/10 [00:01<00:01,  3.84it/s, reward=-1.56][A[A
+
+Train epoch [1]:  70%|███████   | 7/10 [00:01<00:00,  3.84it/s, reward=-1.56][A[A
+
+Train epoch [1]:  70%|███████   | 7/10 [00:02<00:00,  3.84it/s, reward=-1.44][A[A
+
+Train epoch [1]:  80%|████████  | 8/10 [00:02<00:00,  3.84it/s, reward=-1.44][A[A
+
+Train epoch [1]:  80%|████████  | 8/10 [00:02<00:00,  3.84it/s, reward=-1.65][A[A
+
+Train epoch [1]:  90%|█████████ | 9/10 [00:02<00:00,  3.84it/s, reward=-1.65][A[A
+
+Train epoch [1]:  90%|█████████ | 9/10 [00:02<00:00,  3.84it/s, reward=-1.44][A[A
+
+Train epoch [1]: 100%|██████████| 10/10 [00:02<00:00,  3.84it/s, reward=-1.44][A[ATrain epoch [1]: 100%|██████████| 10/10 [00:02<00:00,  3.84it/s, reward=-1.44]
+
+Update steps:  20%|██        | 1/5 [00:02<00:11,  2.88s/it][A
+
+Train epoch [2]:   0%|          | 0/10 [00:00<?, ?it/s][A[A
+
+Train epoch [2]:   0%|          | 0/10 [00:00<?, ?it/s, reward=-1.59][A[A
+
+Train epoch [2]:  10%|█         | 1/10 [00:00<00:02,  3.84it/s, reward=-1.59][A[A
+
+Train epoch [2]:  10%|█         | 1/10 [00:00<00:02,  3.84it/s, reward=-1.49][A[A
+
+Train epoch [2]:  20%|██        | 2/10 [00:00<00:02,  3.82it/s, reward=-1.49][A[A
+
+Train epoch [2]:  20%|██        | 2/10 [00:00<00:02,  3.82it/s, reward=-1.59][A[A
+
+Train epoch [2]:  30%|███       | 3/10 [00:00<00:01,  3.83it/s, reward=-1.59][A[A
+
+Train epoch [2]:  30%|███       | 3/10 [00:01<00:01,  3.83it/s, reward=-1.66][A[A
+
+Train epoch [2]:  40%|████      | 4/10 [00:01<00:01,  3.83it/s, reward=-1.66][A[A
+
+Train epoch [2]:  40%|████      | 4/10 [00:01<00:01,  3.83it/s, reward=-1.56][A[A
+
+Train epoch [2]:  50%|█████     | 5/10 [00:01<00:01,  3.84it/s, reward=-1.56][A[A
+
+Train epoch [2]:  50%|█████     | 5/10 [00:01<00:01,  3.84it/s, reward=-1.35][A[A
+
+Train epoch [2]:  60%|██████    | 6/10 [00:01<00:01,  3.84it/s, reward=-1.35][A[A
+
+Train epoch [2]:  60%|██████    | 6/10 [00:01<00:01,  3.84it/s, reward=-1.42][A[A
+
+Train epoch [2]:  70%|███████   | 7/10 [00:01<00:00,  3.84it/s, reward=-1.42][A[A
+
+Train epoch [2]:  70%|███████   | 7/10 [00:02<00:00,  3.84it/s, reward=-1.51][A[A
+
+Train epoch [2]:  80%|████████  | 8/10 [00:02<00:00,  3.84it/s, reward=-1.51][A[A
+
+Train epoch [2]:  80%|████████  | 8/10 [00:02<00:00,  3.84it/s, reward=-1.46][A[A
+
+Train epoch [2]:  90%|█████████ | 9/10 [00:02<00:00,  3.84it/s, reward=-1.46][A[A
+
+Train epoch [2]:  90%|█████████ | 9/10 [00:02<00:00,  3.84it/s, reward=-1.53][A[A
+
+Train epoch [2]: 100%|██████████| 10/10 [00:02<00:00,  3.84it/s, reward=-1.53][A[ATrain epoch [2]: 100%|██████████| 10/10 [00:02<00:00,  3.84it/s, reward=-1.53]
+
+Update steps:  40%|████      | 2/5 [00:05<00:08,  2.72s/it][A
+
+Train epoch [3]:   0%|          | 0/10 [00:00<?, ?it/s][A[A
+
+Train epoch [3]:   0%|          | 0/10 [00:00<?, ?it/s, reward=-1.53][A[A
+
+Train epoch [3]:  10%|█         | 1/10 [00:00<00:02,  3.84it/s, reward=-1.53][A[A
+
+Train epoch [3]:  10%|█         | 1/10 [00:00<00:02,  3.84it/s, reward=-1.61][A[A
+
+Train epoch [3]:  20%|██        | 2/10 [00:00<00:02,  3.84it/s, reward=-1.61][A[A
+
+Train epoch [3]:  20%|██        | 2/10 [00:00<00:02,  3.84it/s, reward=-1.45][A[A
+
+Train epoch [3]:  30%|███       | 3/10 [00:00<00:01,  3.84it/s, reward=-1.45][A[A
+
+Train epoch [3]:  30%|███       | 3/10 [00:01<00:01,  3.84it/s, reward=-1.63][A[A
+
+Train epoch [3]:  40%|████      | 4/10 [00:01<00:01,  3.84it/s, reward=-1.63][A[A
+
+Train epoch [3]:  40%|████      | 4/10 [00:01<00:01,  3.84it/s, reward=-1.63][A[A
+
+Train epoch [3]:  50%|█████     | 5/10 [00:01<00:01,  3.84it/s, reward=-1.63][A[A
+
+Train epoch [3]:  50%|█████     | 5/10 [00:01<00:01,  3.84it/s, reward=-1.45][A[A
+
+Train epoch [3]:  60%|██████    | 6/10 [00:01<00:01,  3.84it/s, reward=-1.45][A[A
+
+Train epoch [3]:  60%|██████    | 6/10 [00:01<00:01,  3.84it/s, reward=-1.39][A[A
+
+Train epoch [3]:  70%|███████   | 7/10 [00:01<00:00,  3.84it/s, reward=-1.39][A[A
+
+Train epoch [3]:  70%|███████   | 7/10 [00:02<00:00,  3.84it/s, reward=-1.5] [A[A
+
+Train epoch [3]:  80%|████████  | 8/10 [00:02<00:00,  3.84it/s, reward=-1.5][A[A
+
+Train epoch [3]:  80%|████████  | 8/10 [00:02<00:00,  3.84it/s, reward=-1.41][A[A
+
+Train epoch [3]:  90%|█████████ | 9/10 [00:02<00:00,  3.84it/s, reward=-1.41][A[A
+
+Train epoch [3]:  90%|█████████ | 9/10 [00:02<00:00,  3.84it/s, reward=-1.55][A[A
+
+Train epoch [3]: 100%|██████████| 10/10 [00:02<00:00,  3.84it/s, reward=-1.55][A[ATrain epoch [3]: 100%|██████████| 10/10 [00:02<00:00,  3.84it/s, reward=-1.55]
+
+Update steps:  60%|██████    | 3/5 [00:08<00:05,  2.67s/it][A
+
+Train epoch [4]:   0%|          | 0/10 [00:00<?, ?it/s][A[A
+
+Train epoch [4]:   0%|          | 0/10 [00:00<?, ?it/s, reward=-1.46][A[A
+
+Train epoch [4]:  10%|█         | 1/10 [00:00<00:02,  3.84it/s, reward=-1.46][A[A
+
+Train epoch [4]:  10%|█         | 1/10 [00:00<00:02,  3.84it/s, reward=-1.54][A[A
+
+Train epoch [4]:  20%|██        | 2/10 [00:00<00:02,  3.83it/s, reward=-1.54][A[A
+
+Train epoch [4]:  20%|██        | 2/10 [00:00<00:02,  3.83it/s, reward=-1.55][A[A
+
+Train epoch [4]:  30%|███       | 3/10 [00:00<00:01,  3.84it/s, reward=-1.55][A[A
+
+Train epoch [4]:  30%|███       | 3/10 [00:01<00:01,  3.84it/s, reward=-1.74][A[A
+
+Train epoch [4]:  40%|████      | 4/10 [00:01<00:01,  3.84it/s, reward=-1.74][A[A
+
+Train epoch [4]:  40%|████      | 4/10 [00:01<00:01,  3.84it/s, reward=-1.35][A[A
+
+Train epoch [4]:  50%|█████     | 5/10 [00:01<00:01,  3.84it/s, reward=-1.35][A[A
+
+Train epoch [4]:  50%|█████     | 5/10 [00:01<00:01,  3.84it/s, reward=-1.58][A[A
+
+Train epoch [4]:  60%|██████    | 6/10 [00:01<00:01,  3.85it/s, reward=-1.58][A[A
+
+Train epoch [4]:  60%|██████    | 6/10 [00:01<00:01,  3.85it/s, reward=-1.45][A[A
+
+Train epoch [4]:  70%|███████   | 7/10 [00:01<00:00,  3.84it/s, reward=-1.45][A[A
+
+Train epoch [4]:  70%|███████   | 7/10 [00:02<00:00,  3.84it/s, reward=-1.6] [A[A
+
+Train epoch [4]:  80%|████████  | 8/10 [00:02<00:00,  3.84it/s, reward=-1.6][A[A
+
+Train epoch [4]:  80%|████████  | 8/10 [00:02<00:00,  3.84it/s, reward=-1.5][A[A
+
+Train epoch [4]:  90%|█████████ | 9/10 [00:02<00:00,  3.84it/s, reward=-1.5][A[A
+
+Train epoch [4]:  90%|█████████ | 9/10 [00:02<00:00,  3.84it/s, reward=-1.39][A[A
+
+Train epoch [4]: 100%|██████████| 10/10 [00:02<00:00,  3.84it/s, reward=-1.39][A[ATrain epoch [4]: 100%|██████████| 10/10 [00:02<00:00,  3.84it/s, reward=-1.39]
+
+Update steps:  80%|████████  | 4/5 [00:10<00:02,  2.64s/it][A
+
+Train epoch [5]:   0%|          | 0/10 [00:00<?, ?it/s][A[A
+
+Train epoch [5]:   0%|          | 0/10 [00:00<?, ?it/s, reward=-1.68][A[A
+
+Train epoch [5]:  10%|█         | 1/10 [00:00<00:02,  3.84it/s, reward=-1.68][A[A
+
+Train epoch [5]:  10%|█         | 1/10 [00:00<00:02,  3.84it/s, reward=-1.32][A[A
+
+Train epoch [5]:  20%|██        | 2/10 [00:00<00:02,  3.84it/s, reward=-1.32][A[A
+
+Train epoch [5]:  20%|██        | 2/10 [00:00<00:02,  3.84it/s, reward=-1.53][A[A
+
+Train epoch [5]:  30%|███       | 3/10 [00:00<00:01,  3.84it/s, reward=-1.53][A[A
+
+Train epoch [5]:  30%|███       | 3/10 [00:01<00:01,  3.84it/s, reward=-1.37][A[A
+
+Train epoch [5]:  40%|████      | 4/10 [00:01<00:01,  3.84it/s, reward=-1.37][A[A
+
+Train epoch [5]:  40%|████      | 4/10 [00:01<00:01,  3.84it/s, reward=-1.63][A[A
+
+Train epoch [5]:  50%|█████     | 5/10 [00:01<00:01,  3.84it/s, reward=-1.63][A[A
+
+Train epoch [5]:  50%|█████     | 5/10 [00:01<00:01,  3.84it/s, reward=-1.66][A[A
+
+Train epoch [5]:  60%|██████    | 6/10 [00:01<00:01,  3.84it/s, reward=-1.66][A[A
+
+Train epoch [5]:  60%|██████    | 6/10 [00:01<00:01,  3.84it/s, reward=-1.53][A[A
+
+Train epoch [5]:  70%|███████   | 7/10 [00:01<00:00,  3.84it/s, reward=-1.53][A[A
+
+Train epoch [5]:  70%|███████   | 7/10 [00:02<00:00,  3.84it/s, reward=-1.41][A[A
+
+Train epoch [5]:  80%|████████  | 8/10 [00:02<00:00,  3.84it/s, reward=-1.41][A[A
+
+Train epoch [5]:  80%|████████  | 8/10 [00:02<00:00,  3.84it/s, reward=-1.46][A[A
+
+Train epoch [5]:  90%|█████████ | 9/10 [00:02<00:00,  3.84it/s, reward=-1.46][A[A
+
+Train epoch [5]:  90%|█████████ | 9/10 [00:02<00:00,  3.84it/s, reward=-1.56][A[A
+
+Train epoch [5]: 100%|██████████| 10/10 [00:02<00:00,  3.84it/s, reward=-1.56][A[ATrain epoch [5]: 100%|██████████| 10/10 [00:02<00:00,  3.84it/s, reward=-1.56]
+
+Update steps: 100%|██████████| 5/5 [00:13<00:00,  2.63s/it][AUpdate steps: 100%|██████████| 5/5 [00:13<00:00,  2.66s/it]
+Episodes:  50%|█████     | 5/10 [14:24<14:21, 172.29s/it]
+Collect steps:   0%|          | 0/10 [00:00<?, ?it/s][A
+Collect steps:  10%|█         | 1/10 [00:16<02:24, 16.01s/it][A
+Collect steps:  20%|██        | 2/10 [00:31<02:06, 15.84s/it][A
+Collect steps:  30%|███       | 3/10 [00:47<01:50, 15.78s/it][A
+Collect steps:  40%|████      | 4/10 [01:03<01:34, 15.75s/it][A
+Collect steps:  50%|█████     | 5/10 [01:18<01:18, 15.73s/it][A
+Collect steps:  60%|██████    | 6/10 [01:34<01:02, 15.72s/it][A
+Collect steps:  70%|███████   | 7/10 [01:50<00:47, 15.72s/it][A
+Collect steps:  80%|████████  | 8/10 [02:06<00:31, 15.76s/it][A
+Collect steps:  90%|█████████ | 9/10 [02:22<00:15, 15.82s/it][A
+Collect steps: 100%|██████████| 10/10 [02:37<00:00, 15.80s/it][ACollect steps: 100%|██████████| 10/10 [02:37<00:00, 15.78s/it]
+
+Update steps:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+Train epoch [1]:   0%|          | 0/10 [00:00<?, ?it/s][A[A
+
+Train epoch [1]:   0%|          | 0/10 [00:00<?, ?it/s, reward=-1.42][A[A
+
+Train epoch [1]:  10%|█         | 1/10 [00:00<00:02,  3.82it/s, reward=-1.42][A[A
+
+Train epoch [1]:  10%|█         | 1/10 [00:00<00:02,  3.82it/s, reward=-1.49][A[A
+
+Train epoch [1]:  20%|██        | 2/10 [00:00<00:02,  3.83it/s, reward=-1.49][A[A
+
+Train epoch [1]:  20%|██        | 2/10 [00:00<00:02,  3.83it/s, reward=-1.63][A[A
+
+Train epoch [1]:  30%|███       | 3/10 [00:00<00:01,  3.83it/s, reward=-1.63][A[A
+
+Train epoch [1]:  30%|███       | 3/10 [00:01<00:01,  3.83it/s, reward=-1.46][A[A
+
+Train epoch [1]:  40%|████      | 4/10 [00:01<00:01,  3.83it/s, reward=-1.46][A[A
+
+Train epoch [1]:  40%|████      | 4/10 [00:01<00:01,  3.83it/s, reward=-1.57][A[A
+
+Train epoch [1]:  50%|█████     | 5/10 [00:01<00:01,  3.83it/s, reward=-1.57][A[A
+
+Train epoch [1]:  50%|█████     | 5/10 [00:01<00:01,  3.83it/s, reward=-1.62][A[A
+
+Train epoch [1]:  60%|██████    | 6/10 [00:01<00:01,  3.83it/s, reward=-1.62][A[A
+
+Train epoch [1]:  60%|██████    | 6/10 [00:01<00:01,  3.83it/s, reward=-1.59][A[A
+
+Train epoch [1]:  70%|███████   | 7/10 [00:01<00:00,  3.84it/s, reward=-1.59][A[A
+
+Train epoch [1]:  70%|███████   | 7/10 [00:02<00:00,  3.84it/s, reward=-1.72][A[A
+
+Train epoch [1]:  80%|████████  | 8/10 [00:02<00:00,  3.83it/s, reward=-1.72][A[A
+
+Train epoch [1]:  80%|████████  | 8/10 [00:02<00:00,  3.83it/s, reward=-1.64][A[A
+
+Train epoch [1]:  90%|█████████ | 9/10 [00:02<00:00,  3.83it/s, reward=-1.64][A[A
+
+Train epoch [1]:  90%|█████████ | 9/10 [00:02<00:00,  3.83it/s, reward=-1.52][A[A
+
+Train epoch [1]: 100%|██████████| 10/10 [00:02<00:00,  3.84it/s, reward=-1.52][A[ATrain epoch [1]: 100%|██████████| 10/10 [00:02<00:00,  3.83it/s, reward=-1.52]
+
+Update steps:  20%|██        | 1/5 [00:02<00:11,  2.89s/it][A
+
+Train epoch [2]:   0%|          | 0/10 [00:00<?, ?it/s][A[A
+
+Train epoch [2]:   0%|          | 0/10 [00:00<?, ?it/s, reward=-1.59][A[A
+
+Train epoch [2]:  10%|█         | 1/10 [00:00<00:02,  3.83it/s, reward=-1.59][A[A
+
+Train epoch [2]:  10%|█         | 1/10 [00:00<00:02,  3.83it/s, reward=-1.56][A[A
+
+Train epoch [2]:  20%|██        | 2/10 [00:00<00:02,  3.83it/s, reward=-1.56][A[A
+
+Train epoch [2]:  20%|██        | 2/10 [00:00<00:02,  3.83it/s, reward=-1.7] [A[A
+
+Train epoch [2]:  30%|███       | 3/10 [00:00<00:01,  3.83it/s, reward=-1.7][A[A
+
+Train epoch [2]:  30%|███       | 3/10 [00:01<00:01,  3.83it/s, reward=-1.46][A[A
+
+Train epoch [2]:  40%|████      | 4/10 [00:01<00:01,  3.84it/s, reward=-1.46][A[A
+
+Train epoch [2]:  40%|████      | 4/10 [00:01<00:01,  3.84it/s, reward=-1.63][A[A
+
+Train epoch [2]:  50%|█████     | 5/10 [00:01<00:01,  3.84it/s, reward=-1.63][A[A
+
+Train epoch [2]:  50%|█████     | 5/10 [00:01<00:01,  3.84it/s, reward=-1.62][A[A
+
+Train epoch [2]:  60%|██████    | 6/10 [00:01<00:01,  3.83it/s, reward=-1.62][A[A
+
+Train epoch [2]:  60%|██████    | 6/10 [00:01<00:01,  3.83it/s, reward=-1.62][A[A
+
+Train epoch [2]:  70%|███████   | 7/10 [00:01<00:00,  3.83it/s, reward=-1.62][A[A
+
+Train epoch [2]:  70%|███████   | 7/10 [00:02<00:00,  3.83it/s, reward=-1.38][A[A
+
+Train epoch [2]:  80%|████████  | 8/10 [00:02<00:00,  3.83it/s, reward=-1.38][A[A
+
+Train epoch [2]:  80%|████████  | 8/10 [00:02<00:00,  3.83it/s, reward=-1.55][A[A
+
+Train epoch [2]:  90%|█████████ | 9/10 [00:02<00:00,  3.83it/s, reward=-1.55][A[A
+
+Train epoch [2]:  90%|█████████ | 9/10 [00:02<00:00,  3.83it/s, reward=-1.55][A[A
+
+Train epoch [2]: 100%|██████████| 10/10 [00:02<00:00,  3.83it/s, reward=-1.55][A[ATrain epoch [2]: 100%|██████████| 10/10 [00:02<00:00,  3.83it/s, reward=-1.55]
+
+Update steps:  40%|████      | 2/5 [00:05<00:08,  2.72s/it][A
+
+Train epoch [3]:   0%|          | 0/10 [00:00<?, ?it/s][A[A
+
+Train epoch [3]:   0%|          | 0/10 [00:00<?, ?it/s, reward=-1.5][A[A
+
+Train epoch [3]:  10%|█         | 1/10 [00:00<00:02,  3.84it/s, reward=-1.5][A[A
+
+Train epoch [3]:  10%|█         | 1/10 [00:00<00:02,  3.84it/s, reward=-1.67][A[A
+
+Train epoch [3]:  20%|██        | 2/10 [00:00<00:02,  3.84it/s, reward=-1.67][A[A
+
+Train epoch [3]:  20%|██        | 2/10 [00:00<00:02,  3.84it/s, reward=-1.56][A[A
+
+Train epoch [3]:  30%|███       | 3/10 [00:00<00:01,  3.83it/s, reward=-1.56][A[A
+
+Train epoch [3]:  30%|███       | 3/10 [00:01<00:01,  3.83it/s, reward=-1.45][A[A
+
+Train epoch [3]:  40%|████      | 4/10 [00:01<00:01,  3.84it/s, reward=-1.45][A[A
+
+Train epoch [3]:  40%|████      | 4/10 [00:01<00:01,  3.84it/s, reward=-1.62][A[A
+
+Train epoch [3]:  50%|█████     | 5/10 [00:01<00:01,  3.84it/s, reward=-1.62][A[A
+
+Train epoch [3]:  50%|█████     | 5/10 [00:01<00:01,  3.84it/s, reward=-1.62][A[A
+
+Train epoch [3]:  60%|██████    | 6/10 [00:01<00:01,  3.84it/s, reward=-1.62][A[A
+
+Train epoch [3]:  60%|██████    | 6/10 [00:01<00:01,  3.84it/s, reward=-1.51][A[A
+
+Train epoch [3]:  70%|███████   | 7/10 [00:01<00:00,  3.83it/s, reward=-1.51][A[A
+
+Train epoch [3]:  70%|███████   | 7/10 [00:02<00:00,  3.83it/s, reward=-1.64][A[A
+
+Train epoch [3]:  80%|████████  | 8/10 [00:02<00:00,  3.83it/s, reward=-1.64][A[A
+
+Train epoch [3]:  80%|████████  | 8/10 [00:02<00:00,  3.83it/s, reward=-1.5] [A[A
+
+Train epoch [3]:  90%|█████████ | 9/10 [00:02<00:00,  3.83it/s, reward=-1.5][A[A
+
+Train epoch [3]:  90%|█████████ | 9/10 [00:02<00:00,  3.83it/s, reward=-1.6][A[A
+
+Train epoch [3]: 100%|██████████| 10/10 [00:02<00:00,  3.83it/s, reward=-1.6][A[ATrain epoch [3]: 100%|██████████| 10/10 [00:02<00:00,  3.83it/s, reward=-1.6]
+
+Update steps:  60%|██████    | 3/5 [00:08<00:05,  2.67s/it][A
+
+Train epoch [4]:   0%|          | 0/10 [00:00<?, ?it/s][A[A
+
+Train epoch [4]:   0%|          | 0/10 [00:00<?, ?it/s, reward=-1.35][A[A
+
+Train epoch [4]:  10%|█         | 1/10 [00:00<00:02,  3.83it/s, reward=-1.35][A[A
+
+Train epoch [4]:  10%|█         | 1/10 [00:00<00:02,  3.83it/s, reward=-1.68][A[A
+
+Train epoch [4]:  20%|██        | 2/10 [00:00<00:02,  3.83it/s, reward=-1.68][A[A
+
+Train epoch [4]:  20%|██        | 2/10 [00:00<00:02,  3.83it/s, reward=-1.69][A[A
+
+Train epoch [4]:  30%|███       | 3/10 [00:00<00:01,  3.83it/s, reward=-1.69][A[A
+
+Train epoch [4]:  30%|███       | 3/10 [00:01<00:01,  3.83it/s, reward=-1.45][A[A
+
+Train epoch [4]:  40%|████      | 4/10 [00:01<00:01,  3.84it/s, reward=-1.45][A[A
+
+Train epoch [4]:  40%|████      | 4/10 [00:01<00:01,  3.84it/s, reward=-1.6] [A[A
+
+Train epoch [4]:  50%|█████     | 5/10 [00:01<00:01,  3.83it/s, reward=-1.6][A[A
+
+Train epoch [4]:  50%|█████     | 5/10 [00:01<00:01,  3.83it/s, reward=-1.66][A[A
+
+Train epoch [4]:  60%|██████    | 6/10 [00:01<00:01,  3.83it/s, reward=-1.66][A[A
+
+Train epoch [4]:  60%|██████    | 6/10 [00:01<00:01,  3.83it/s, reward=-1.54][A[A
+
+Train epoch [4]:  70%|███████   | 7/10 [00:01<00:00,  3.84it/s, reward=-1.54][A[A
+
+Train epoch [4]:  70%|███████   | 7/10 [00:02<00:00,  3.84it/s, reward=-1.65][A[A
+
+Train epoch [4]:  80%|████████  | 8/10 [00:02<00:00,  3.84it/s, reward=-1.65][A[A
+
+Train epoch [4]:  80%|████████  | 8/10 [00:02<00:00,  3.84it/s, reward=-1.5] [A[A
+
+Train epoch [4]:  90%|█████████ | 9/10 [00:02<00:00,  3.84it/s, reward=-1.5][A[A
+
+Train epoch [4]:  90%|█████████ | 9/10 [00:02<00:00,  3.84it/s, reward=-1.54][A[A
+
+Train epoch [4]: 100%|██████████| 10/10 [00:02<00:00,  3.84it/s, reward=-1.54][A[ATrain epoch [4]: 100%|██████████| 10/10 [00:02<00:00,  3.84it/s, reward=-1.54]
+
+Update steps:  80%|████████  | 4/5 [00:10<00:02,  2.65s/it][A
+
+Train epoch [5]:   0%|          | 0/10 [00:00<?, ?it/s][A[A
+
+Train epoch [5]:   0%|          | 0/10 [00:00<?, ?it/s, reward=-1.57][A[A
+
+Train epoch [5]:  10%|█         | 1/10 [00:00<00:02,  3.84it/s, reward=-1.57][A[A
+
+Train epoch [5]:  10%|█         | 1/10 [00:00<00:02,  3.84it/s, reward=-1.6] [A[A
+
+Train epoch [5]:  20%|██        | 2/10 [00:00<00:02,  3.84it/s, reward=-1.6][A[A
+
+Train epoch [5]:  20%|██        | 2/10 [00:00<00:02,  3.84it/s, reward=-1.63][A[A
+
+Train epoch [5]:  30%|███       | 3/10 [00:00<00:01,  3.83it/s, reward=-1.63][A[A
+
+Train epoch [5]:  30%|███       | 3/10 [00:01<00:01,  3.83it/s, reward=-1.65][A[A
+
+Train epoch [5]:  40%|████      | 4/10 [00:01<00:01,  3.83it/s, reward=-1.65][A[A
+
+Train epoch [5]:  40%|████      | 4/10 [00:01<00:01,  3.83it/s, reward=-1.38][A[A
+
+Train epoch [5]:  50%|█████     | 5/10 [00:01<00:01,  3.83it/s, reward=-1.38][A[A
+
+Train epoch [5]:  50%|█████     | 5/10 [00:01<00:01,  3.83it/s, reward=-1.6] [A[A
+
+Train epoch [5]:  60%|██████    | 6/10 [00:01<00:01,  3.84it/s, reward=-1.6][A[A
+
+Train epoch [5]:  60%|██████    | 6/10 [00:01<00:01,  3.84it/s, reward=-1.43][A[A
+
+Train epoch [5]:  70%|███████   | 7/10 [00:01<00:00,  3.84it/s, reward=-1.43][A[A
+
+Train epoch [5]:  70%|███████   | 7/10 [00:02<00:00,  3.84it/s, reward=-1.6] [A[A
+
+Train epoch [5]:  80%|████████  | 8/10 [00:02<00:00,  3.84it/s, reward=-1.6][A[A
+
+Train epoch [5]:  80%|████████  | 8/10 [00:02<00:00,  3.84it/s, reward=-1.53][A[A
+
+Train epoch [5]:  90%|█████████ | 9/10 [00:02<00:00,  3.84it/s, reward=-1.53][A[A
+
+Train epoch [5]:  90%|█████████ | 9/10 [00:02<00:00,  3.84it/s, reward=-1.67][A[A
+
+Train epoch [5]: 100%|██████████| 10/10 [00:02<00:00,  3.83it/s, reward=-1.67][A[ATrain epoch [5]: 100%|██████████| 10/10 [00:02<00:00,  3.83it/s, reward=-1.67]
+
+Update steps: 100%|██████████| 5/5 [00:13<00:00,  2.64s/it][AUpdate steps: 100%|██████████| 5/5 [00:13<00:00,  2.67s/it]
+Episodes:  60%|██████    | 6/10 [17:15<11:27, 171.91s/it]
+Collect steps:   0%|          | 0/10 [00:00<?, ?it/s][A
+Collect steps:  10%|█         | 1/10 [00:16<02:24, 16.06s/it][A
+Collect steps:  20%|██        | 2/10 [00:32<02:08, 16.09s/it][A
+Collect steps:  30%|███       | 3/10 [00:48<01:53, 16.21s/it][A
+Collect steps:  40%|████      | 4/10 [01:04<01:37, 16.29s/it][A
+Collect steps:  50%|█████     | 5/10 [01:21<01:21, 16.32s/it][A
+Collect steps:  60%|██████    | 6/10 [01:37<01:05, 16.34s/it][A
+Collect steps:  70%|███████   | 7/10 [01:54<00:49, 16.35s/it][A
+Collect steps:  80%|████████  | 8/10 [02:10<00:32, 16.34s/it][A
+Collect steps:  90%|█████████ | 9/10 [02:26<00:16, 16.35s/it][A
+Collect steps: 100%|██████████| 10/10 [02:43<00:00, 16.35s/it][ACollect steps: 100%|██████████| 10/10 [02:43<00:00, 16.31s/it]
+
+Update steps:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+Train epoch [1]:   0%|          | 0/10 [00:00<?, ?it/s][A[A
+
+Train epoch [1]:   0%|          | 0/10 [00:00<?, ?it/s, reward=-1.86][A[A
+
+Train epoch [1]:  10%|█         | 1/10 [00:00<00:02,  3.79it/s, reward=-1.86][A[A
+
+Train epoch [1]:  10%|█         | 1/10 [00:00<00:02,  3.79it/s, reward=-1.62][A[A
+
+Train epoch [1]:  20%|██        | 2/10 [00:00<00:02,  3.81it/s, reward=-1.62][A[A
+
+Train epoch [1]:  20%|██        | 2/10 [00:00<00:02,  3.81it/s, reward=-1.67][A[A
+
+Train epoch [1]:  30%|███       | 3/10 [00:00<00:01,  3.81it/s, reward=-1.67][A[A
+
+Train epoch [1]:  30%|███       | 3/10 [00:01<00:01,  3.81it/s, reward=-1.69][A[A
+
+Train epoch [1]:  40%|████      | 4/10 [00:01<00:01,  3.81it/s, reward=-1.69][A[A
+
+Train epoch [1]:  40%|████      | 4/10 [00:01<00:01,  3.81it/s, reward=-1.55][A[A
+
+Train epoch [1]:  50%|█████     | 5/10 [00:01<00:01,  3.81it/s, reward=-1.55][A[A
+
+Train epoch [1]:  50%|█████     | 5/10 [00:01<00:01,  3.81it/s, reward=-1.58][A[A
+
+Train epoch [1]:  60%|██████    | 6/10 [00:01<00:01,  3.82it/s, reward=-1.58][A[A
+
+Train epoch [1]:  60%|██████    | 6/10 [00:01<00:01,  3.82it/s, reward=-1.77][A[A
+
+Train epoch [1]:  70%|███████   | 7/10 [00:01<00:00,  3.82it/s, reward=-1.77][A[A
+
+Train epoch [1]:  70%|███████   | 7/10 [00:02<00:00,  3.82it/s, reward=-1.81][A[A
+
+Train epoch [1]:  80%|████████  | 8/10 [00:02<00:00,  3.81it/s, reward=-1.81][A[A
+
+Train epoch [1]:  80%|████████  | 8/10 [00:02<00:00,  3.81it/s, reward=-1.5] [A[A
+
+Train epoch [1]:  90%|█████████ | 9/10 [00:02<00:00,  3.82it/s, reward=-1.5][A[A
+
+Train epoch [1]:  90%|█████████ | 9/10 [00:02<00:00,  3.82it/s, reward=-1.53][A[A
+
+Train epoch [1]: 100%|██████████| 10/10 [00:02<00:00,  3.82it/s, reward=-1.53][A[ATrain epoch [1]: 100%|██████████| 10/10 [00:02<00:00,  3.82it/s, reward=-1.53]
+
+Update steps:  20%|██        | 1/5 [00:02<00:11,  2.90s/it][A
+
+Train epoch [2]:   0%|          | 0/10 [00:00<?, ?it/s][A[A
+
+Train epoch [2]:   0%|          | 0/10 [00:00<?, ?it/s, reward=-1.78][A[A
+
+Train epoch [2]:  10%|█         | 1/10 [00:00<00:02,  3.81it/s, reward=-1.78][A[A
+
+Train epoch [2]:  10%|█         | 1/10 [00:00<00:02,  3.81it/s, reward=-1.65][A[A
+
+Train epoch [2]:  20%|██        | 2/10 [00:00<00:02,  3.82it/s, reward=-1.65][A[A
+
+Train epoch [2]:  20%|██        | 2/10 [00:00<00:02,  3.82it/s, reward=-1.53][A[A
+
+Train epoch [2]:  30%|███       | 3/10 [00:00<00:01,  3.82it/s, reward=-1.53][A[A
+
+Train epoch [2]:  30%|███       | 3/10 [00:01<00:01,  3.82it/s, reward=-1.72][A[A
+
+Train epoch [2]:  40%|████      | 4/10 [00:01<00:01,  3.82it/s, reward=-1.72][A[A
+
+Train epoch [2]:  40%|████      | 4/10 [00:01<00:01,  3.82it/s, reward=-1.44][A[A
+
+Train epoch [2]:  50%|█████     | 5/10 [00:01<00:01,  3.82it/s, reward=-1.44][A[A
+
+Train epoch [2]:  50%|█████     | 5/10 [00:01<00:01,  3.82it/s, reward=-1.7] [A[A
+
+Train epoch [2]:  60%|██████    | 6/10 [00:01<00:01,  3.82it/s, reward=-1.7][A[A
+
+Train epoch [2]:  60%|██████    | 6/10 [00:01<00:01,  3.82it/s, reward=-1.66][A[A
+
+Train epoch [2]:  70%|███████   | 7/10 [00:01<00:00,  3.82it/s, reward=-1.66][A[A
+
+Train epoch [2]:  70%|███████   | 7/10 [00:02<00:00,  3.82it/s, reward=-1.75][A[A
+
+Train epoch [2]:  80%|████████  | 8/10 [00:02<00:00,  3.82it/s, reward=-1.75][A[A
+
+Train epoch [2]:  80%|████████  | 8/10 [00:02<00:00,  3.82it/s, reward=-1.63][A[A
+
+Train epoch [2]:  90%|█████████ | 9/10 [00:02<00:00,  3.82it/s, reward=-1.63][A[A
+
+Train epoch [2]:  90%|█████████ | 9/10 [00:02<00:00,  3.82it/s, reward=-1.73][A[A
+
+Train epoch [2]: 100%|██████████| 10/10 [00:02<00:00,  3.82it/s, reward=-1.73][A[ATrain epoch [2]: 100%|██████████| 10/10 [00:02<00:00,  3.82it/s, reward=-1.73]
+
+Update steps:  40%|████      | 2/5 [00:05<00:08,  2.74s/it][A
+
+Train epoch [3]:   0%|          | 0/10 [00:00<?, ?it/s][A[A
+
+Train epoch [3]:   0%|          | 0/10 [00:00<?, ?it/s, reward=-1.7][A[A
+
+Train epoch [3]:  10%|█         | 1/10 [00:00<00:02,  3.82it/s, reward=-1.7][A[A
+
+Train epoch [3]:  10%|█         | 1/10 [00:00<00:02,  3.82it/s, reward=-1.7][A[A
+
+Train epoch [3]:  20%|██        | 2/10 [00:00<00:02,  3.81it/s, reward=-1.7][A[A
+
+Train epoch [3]:  20%|██        | 2/10 [00:00<00:02,  3.81it/s, reward=-1.67][A[A
+
+Train epoch [3]:  30%|███       | 3/10 [00:00<00:01,  3.82it/s, reward=-1.67][A[A
+
+Train epoch [3]:  30%|███       | 3/10 [00:01<00:01,  3.82it/s, reward=-1.68][A[A
+
+Train epoch [3]:  40%|████      | 4/10 [00:01<00:01,  3.82it/s, reward=-1.68][A[A
+
+Train epoch [3]:  40%|████      | 4/10 [00:01<00:01,  3.82it/s, reward=-1.58][A[A
+
+Train epoch [3]:  50%|█████     | 5/10 [00:01<00:01,  3.82it/s, reward=-1.58][A[A
+
+Train epoch [3]:  50%|█████     | 5/10 [00:01<00:01,  3.82it/s, reward=-1.52][A[A
+
+Train epoch [3]:  60%|██████    | 6/10 [00:01<00:01,  3.82it/s, reward=-1.52][A[A
+
+Train epoch [3]:  60%|██████    | 6/10 [00:01<00:01,  3.82it/s, reward=-1.8] [A[A
+
+Train epoch [3]:  70%|███████   | 7/10 [00:01<00:00,  3.82it/s, reward=-1.8][A[A
+
+Train epoch [3]:  70%|███████   | 7/10 [00:02<00:00,  3.82it/s, reward=-1.66][A[A
+
+Train epoch [3]:  80%|████████  | 8/10 [00:02<00:00,  3.82it/s, reward=-1.66][A[A
+
+Train epoch [3]:  80%|████████  | 8/10 [00:02<00:00,  3.82it/s, reward=-1.79][A[A
+
+Train epoch [3]:  90%|█████████ | 9/10 [00:02<00:00,  3.82it/s, reward=-1.79][A[A
+
+Train epoch [3]:  90%|█████████ | 9/10 [00:02<00:00,  3.82it/s, reward=-1.51][A[A
+
+Train epoch [3]: 100%|██████████| 10/10 [00:02<00:00,  3.82it/s, reward=-1.51][A[ATrain epoch [3]: 100%|██████████| 10/10 [00:02<00:00,  3.82it/s, reward=-1.51]
+
+Update steps:  60%|██████    | 3/5 [00:08<00:05,  2.68s/it][A
+
+Train epoch [4]:   0%|          | 0/10 [00:00<?, ?it/s][A[A
+
+Train epoch [4]:   0%|          | 0/10 [00:00<?, ?it/s, reward=-1.71][A[A
+
+Train epoch [4]:  10%|█         | 1/10 [00:00<00:02,  3.80it/s, reward=-1.71][A[A
+
+Train epoch [4]:  10%|█         | 1/10 [00:00<00:02,  3.80it/s, reward=-1.68][A[A
+
+Train epoch [4]:  20%|██        | 2/10 [00:00<00:02,  3.81it/s, reward=-1.68][A[A
+
+Train epoch [4]:  20%|██        | 2/10 [00:00<00:02,  3.81it/s, reward=-1.54][A[A
+
+Train epoch [4]:  30%|███       | 3/10 [00:00<00:01,  3.81it/s, reward=-1.54][A[A
+
+Train epoch [4]:  30%|███       | 3/10 [00:01<00:01,  3.81it/s, reward=-1.55][A[A
+
+Train epoch [4]:  40%|████      | 4/10 [00:01<00:01,  3.81it/s, reward=-1.55][A[A
+
+Train epoch [4]:  40%|████      | 4/10 [00:01<00:01,  3.81it/s, reward=-1.61][A[A
+
+Train epoch [4]:  50%|█████     | 5/10 [00:01<00:01,  3.81it/s, reward=-1.61][A[A
+
+Train epoch [4]:  50%|█████     | 5/10 [00:01<00:01,  3.81it/s, reward=-1.64][A[A
+
+Train epoch [4]:  60%|██████    | 6/10 [00:01<00:01,  3.82it/s, reward=-1.64][A[A
+
+Train epoch [4]:  60%|██████    | 6/10 [00:01<00:01,  3.82it/s, reward=-1.68][A[A
+
+Train epoch [4]:  70%|███████   | 7/10 [00:01<00:00,  3.82it/s, reward=-1.68][A[A
+
+Train epoch [4]:  70%|███████   | 7/10 [00:02<00:00,  3.82it/s, reward=-1.8] [A[A
+
+Train epoch [4]:  80%|████████  | 8/10 [00:02<00:00,  3.82it/s, reward=-1.8][A[A
+
+Train epoch [4]:  80%|████████  | 8/10 [00:02<00:00,  3.82it/s, reward=-1.64][A[A
+
+Train epoch [4]:  90%|█████████ | 9/10 [00:02<00:00,  3.82it/s, reward=-1.64][A[A
+
+Train epoch [4]:  90%|█████████ | 9/10 [00:02<00:00,  3.82it/s, reward=-1.73][A[A
+
+Train epoch [4]: 100%|██████████| 10/10 [00:02<00:00,  3.82it/s, reward=-1.73][A[ATrain epoch [4]: 100%|██████████| 10/10 [00:02<00:00,  3.82it/s, reward=-1.73]
+
+Update steps:  80%|████████  | 4/5 [00:10<00:02,  2.66s/it][A
+
+Train epoch [5]:   0%|          | 0/10 [00:00<?, ?it/s][A[A
+
+Train epoch [5]:   0%|          | 0/10 [00:00<?, ?it/s, reward=-1.69][A[A
+
+Train epoch [5]:  10%|█         | 1/10 [00:00<00:02,  3.82it/s, reward=-1.69][A[A
+
+Train epoch [5]:  10%|█         | 1/10 [00:00<00:02,  3.82it/s, reward=-1.76][A[A
+
+Train epoch [5]:  20%|██        | 2/10 [00:00<00:02,  3.82it/s, reward=-1.76][A[A
+
+Train epoch [5]:  20%|██        | 2/10 [00:00<00:02,  3.82it/s, reward=-1.69][A[A
+
+Train epoch [5]:  30%|███       | 3/10 [00:00<00:01,  3.82it/s, reward=-1.69][A[A
+
+Train epoch [5]:  30%|███       | 3/10 [00:01<00:01,  3.82it/s, reward=-1.66][A[A
+
+Train epoch [5]:  40%|████      | 4/10 [00:01<00:01,  3.82it/s, reward=-1.66][A[A
+
+Train epoch [5]:  40%|████      | 4/10 [00:01<00:01,  3.82it/s, reward=-1.57][A[A
+
+Train epoch [5]:  50%|█████     | 5/10 [00:01<00:01,  3.83it/s, reward=-1.57][A[A
+
+Train epoch [5]:  50%|█████     | 5/10 [00:01<00:01,  3.83it/s, reward=-1.7] [A[A
+
+Train epoch [5]:  60%|██████    | 6/10 [00:01<00:01,  3.83it/s, reward=-1.7][A[A
+
+Train epoch [5]:  60%|██████    | 6/10 [00:01<00:01,  3.83it/s, reward=-1.61][A[A
+
+Train epoch [5]:  70%|███████   | 7/10 [00:01<00:00,  3.83it/s, reward=-1.61][A[A
+
+Train epoch [5]:  70%|███████   | 7/10 [00:02<00:00,  3.83it/s, reward=-1.67][A[A
+
+Train epoch [5]:  80%|████████  | 8/10 [00:02<00:00,  3.82it/s, reward=-1.67][A[A
+
+Train epoch [5]:  80%|████████  | 8/10 [00:02<00:00,  3.82it/s, reward=-1.63][A[A
+
+Train epoch [5]:  90%|█████████ | 9/10 [00:02<00:00,  3.83it/s, reward=-1.63][A[A
+
+Train epoch [5]:  90%|█████████ | 9/10 [00:02<00:00,  3.83it/s, reward=-1.62][A[A
+
+Train epoch [5]: 100%|██████████| 10/10 [00:02<00:00,  3.82it/s, reward=-1.62][A[ATrain epoch [5]: 100%|██████████| 10/10 [00:02<00:00,  3.82it/s, reward=-1.62]
+
+Update steps: 100%|██████████| 5/5 [00:13<00:00,  2.65s/it][AUpdate steps: 100%|██████████| 5/5 [00:13<00:00,  2.68s/it]
+Episodes:  70%|███████   | 7/10 [20:12<08:40, 173.40s/it]
+Collect steps:   0%|          | 0/10 [00:00<?, ?it/s][A
+Collect steps:  10%|█         | 1/10 [00:16<02:28, 16.48s/it][A
+Collect steps:  20%|██        | 2/10 [00:32<02:11, 16.41s/it][A
+Collect steps:  30%|███       | 3/10 [00:49<01:54, 16.40s/it][A
+Collect steps:  40%|████      | 4/10 [01:05<01:38, 16.38s/it][A
+Collect steps:  50%|█████     | 5/10 [01:21<01:21, 16.37s/it][A
+Collect steps:  60%|██████    | 6/10 [01:38<01:05, 16.35s/it][A
+Collect steps:  70%|███████   | 7/10 [01:54<00:49, 16.35s/it][A
+Collect steps:  80%|████████  | 8/10 [02:10<00:32, 16.35s/it][A
+Collect steps:  90%|█████████ | 9/10 [02:27<00:16, 16.33s/it][A
+Collect steps: 100%|██████████| 10/10 [02:43<00:00, 16.34s/it][ACollect steps: 100%|██████████| 10/10 [02:43<00:00, 16.36s/it]
+
+Update steps:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+Train epoch [1]:   0%|          | 0/10 [00:00<?, ?it/s][A[A
+
+Train epoch [1]:   0%|          | 0/10 [00:00<?, ?it/s, reward=-1.64][A[A
+
+Train epoch [1]:  10%|█         | 1/10 [00:00<00:02,  3.81it/s, reward=-1.64][A[A
+
+Train epoch [1]:  10%|█         | 1/10 [00:00<00:02,  3.81it/s, reward=-1.78][A[A
+
+Train epoch [1]:  20%|██        | 2/10 [00:00<00:02,  3.81it/s, reward=-1.78][A[A
+
+Train epoch [1]:  20%|██        | 2/10 [00:00<00:02,  3.81it/s, reward=-1.56][A[A
+
+Train epoch [1]:  30%|███       | 3/10 [00:00<00:01,  3.82it/s, reward=-1.56][A[A
+
+Train epoch [1]:  30%|███       | 3/10 [00:01<00:01,  3.82it/s, reward=-1.65][A[A
+
+Train epoch [1]:  40%|████      | 4/10 [00:01<00:01,  3.82it/s, reward=-1.65][A[A
+
+Train epoch [1]:  40%|████      | 4/10 [00:01<00:01,  3.82it/s, reward=-1.65][A[A
+
+Train epoch [1]:  50%|█████     | 5/10 [00:01<00:01,  3.82it/s, reward=-1.65][A[A
+
+Train epoch [1]:  50%|█████     | 5/10 [00:01<00:01,  3.82it/s, reward=-1.7] [A[A
+
+Train epoch [1]:  60%|██████    | 6/10 [00:01<00:01,  3.82it/s, reward=-1.7][A[A
+
+Train epoch [1]:  60%|██████    | 6/10 [00:01<00:01,  3.82it/s, reward=-1.82][A[A
+
+Train epoch [1]:  70%|███████   | 7/10 [00:01<00:00,  3.82it/s, reward=-1.82][A[A
+
+Train epoch [1]:  70%|███████   | 7/10 [00:02<00:00,  3.82it/s, reward=-1.74][A[A
+
+Train epoch [1]:  80%|████████  | 8/10 [00:02<00:00,  3.82it/s, reward=-1.74][A[A
+
+Train epoch [1]:  80%|████████  | 8/10 [00:02<00:00,  3.82it/s, reward=-1.59][A[A
+
+Train epoch [1]:  90%|█████████ | 9/10 [00:02<00:00,  3.82it/s, reward=-1.59][A[A
+
+Train epoch [1]:  90%|█████████ | 9/10 [00:02<00:00,  3.82it/s, reward=-1.76][A[A
+
+Train epoch [1]: 100%|██████████| 10/10 [00:02<00:00,  3.82it/s, reward=-1.76][A[ATrain epoch [1]: 100%|██████████| 10/10 [00:02<00:00,  3.82it/s, reward=-1.76]
+
+Update steps:  20%|██        | 1/5 [00:02<00:11,  2.90s/it][A
+
+Train epoch [2]:   0%|          | 0/10 [00:00<?, ?it/s][A[A
+
+Train epoch [2]:   0%|          | 0/10 [00:00<?, ?it/s, reward=-1.61][A[A
+
+Train epoch [2]:  10%|█         | 1/10 [00:00<00:02,  3.81it/s, reward=-1.61][A[A
+
+Train epoch [2]:  10%|█         | 1/10 [00:00<00:02,  3.81it/s, reward=-1.86][A[A
+
+Train epoch [2]:  20%|██        | 2/10 [00:00<00:02,  3.82it/s, reward=-1.86][A[A
+
+Train epoch [2]:  20%|██        | 2/10 [00:00<00:02,  3.82it/s, reward=-1.6] [A[A
+
+Train epoch [2]:  30%|███       | 3/10 [00:00<00:01,  3.82it/s, reward=-1.6][A[A
+
+Train epoch [2]:  30%|███       | 3/10 [00:01<00:01,  3.82it/s, reward=-1.64][A[A
+
+Train epoch [2]:  40%|████      | 4/10 [00:01<00:01,  3.82it/s, reward=-1.64][A[A
+
+Train epoch [2]:  40%|████      | 4/10 [00:01<00:01,  3.82it/s, reward=-1.68][A[A
+
+Train epoch [2]:  50%|█████     | 5/10 [00:01<00:01,  3.82it/s, reward=-1.68][A[A
+
+Train epoch [2]:  50%|█████     | 5/10 [00:01<00:01,  3.82it/s, reward=-1.64][A[A
+
+Train epoch [2]:  60%|██████    | 6/10 [00:01<00:01,  3.82it/s, reward=-1.64][A[A
+
+Train epoch [2]:  60%|██████    | 6/10 [00:01<00:01,  3.82it/s, reward=-1.82][A[A
+
+Train epoch [2]:  70%|███████   | 7/10 [00:01<00:00,  3.82it/s, reward=-1.82][A[A
+
+Train epoch [2]:  70%|███████   | 7/10 [00:02<00:00,  3.82it/s, reward=-1.69][A[A
+
+Train epoch [2]:  80%|████████  | 8/10 [00:02<00:00,  3.81it/s, reward=-1.69][A[A
+
+Train epoch [2]:  80%|████████  | 8/10 [00:02<00:00,  3.81it/s, reward=-1.64][A[A
+
+Train epoch [2]:  90%|█████████ | 9/10 [00:02<00:00,  3.81it/s, reward=-1.64][A[A
+
+Train epoch [2]:  90%|█████████ | 9/10 [00:02<00:00,  3.81it/s, reward=-1.69][A[A
+
+Train epoch [2]: 100%|██████████| 10/10 [00:02<00:00,  3.82it/s, reward=-1.69][A[ATrain epoch [2]: 100%|██████████| 10/10 [00:02<00:00,  3.82it/s, reward=-1.69]
+
+Update steps:  40%|████      | 2/5 [00:05<00:08,  2.74s/it][A
+
+Train epoch [3]:   0%|          | 0/10 [00:00<?, ?it/s][A[A
+
+Train epoch [3]:   0%|          | 0/10 [00:00<?, ?it/s, reward=-1.65][A[A
+
+Train epoch [3]:  10%|█         | 1/10 [00:00<00:02,  3.82it/s, reward=-1.65][A[A
+
+Train epoch [3]:  10%|█         | 1/10 [00:00<00:02,  3.82it/s, reward=-1.72][A[A
+
+Train epoch [3]:  20%|██        | 2/10 [00:00<00:02,  3.82it/s, reward=-1.72][A[A
+
+Train epoch [3]:  20%|██        | 2/10 [00:00<00:02,  3.82it/s, reward=-1.67][A[A
+
+Train epoch [3]:  30%|███       | 3/10 [00:00<00:01,  3.82it/s, reward=-1.67][A[A
+
+Train epoch [3]:  30%|███       | 3/10 [00:01<00:01,  3.82it/s, reward=-1.7] [A[A
+
+Train epoch [3]:  40%|████      | 4/10 [00:01<00:01,  3.82it/s, reward=-1.7][A[A
+
+Train epoch [3]:  40%|████      | 4/10 [00:01<00:01,  3.82it/s, reward=-1.84][A[A
+
+Train epoch [3]:  50%|█████     | 5/10 [00:01<00:01,  3.82it/s, reward=-1.84][A[A
+
+Train epoch [3]:  50%|█████     | 5/10 [00:01<00:01,  3.82it/s, reward=-1.61][A[A
+
+Train epoch [3]:  60%|██████    | 6/10 [00:01<00:01,  3.83it/s, reward=-1.61][A[A
+
+Train epoch [3]:  60%|██████    | 6/10 [00:01<00:01,  3.83it/s, reward=-1.75][A[A
+
+Train epoch [3]:  70%|███████   | 7/10 [00:01<00:00,  3.83it/s, reward=-1.75][A[A
+
+Train epoch [3]:  70%|███████   | 7/10 [00:02<00:00,  3.83it/s, reward=-1.62][A[A
+
+Train epoch [3]:  80%|████████  | 8/10 [00:02<00:00,  3.83it/s, reward=-1.62][A[A
+
+Train epoch [3]:  80%|████████  | 8/10 [00:02<00:00,  3.83it/s, reward=-1.63][A[A
+
+Train epoch [3]:  90%|█████████ | 9/10 [00:02<00:00,  3.83it/s, reward=-1.63][A[A
+
+Train epoch [3]:  90%|█████████ | 9/10 [00:02<00:00,  3.83it/s, reward=-1.69][A[A
+
+Train epoch [3]: 100%|██████████| 10/10 [00:02<00:00,  3.82it/s, reward=-1.69][A[ATrain epoch [3]: 100%|██████████| 10/10 [00:02<00:00,  3.82it/s, reward=-1.69]
+
+Update steps:  60%|██████    | 3/5 [00:08<00:05,  2.68s/it][A
+
+Train epoch [4]:   0%|          | 0/10 [00:00<?, ?it/s][A[A
+
+Train epoch [4]:   0%|          | 0/10 [00:00<?, ?it/s, reward=-1.7][A[A
+
+Train epoch [4]:  10%|█         | 1/10 [00:00<00:02,  3.82it/s, reward=-1.7][A[A
+
+Train epoch [4]:  10%|█         | 1/10 [00:00<00:02,  3.82it/s, reward=-1.75][A[A
+
+Train epoch [4]:  20%|██        | 2/10 [00:00<00:02,  3.82it/s, reward=-1.75][A[A
+
+Train epoch [4]:  20%|██        | 2/10 [00:00<00:02,  3.82it/s, reward=-1.63][A[A
+
+Train epoch [4]:  30%|███       | 3/10 [00:00<00:01,  3.82it/s, reward=-1.63][A[A
+
+Train epoch [4]:  30%|███       | 3/10 [00:01<00:01,  3.82it/s, reward=-1.68][A[A
+
+Train epoch [4]:  40%|████      | 4/10 [00:01<00:01,  3.82it/s, reward=-1.68][A[A
+
+Train epoch [4]:  40%|████      | 4/10 [00:01<00:01,  3.82it/s, reward=-1.66][A[A
+
+Train epoch [4]:  50%|█████     | 5/10 [00:01<00:01,  3.82it/s, reward=-1.66][A[A
+
+Train epoch [4]:  50%|█████     | 5/10 [00:01<00:01,  3.82it/s, reward=-1.77][A[A
+
+Train epoch [4]:  60%|██████    | 6/10 [00:01<00:01,  3.82it/s, reward=-1.77][A[A
+
+Train epoch [4]:  60%|██████    | 6/10 [00:01<00:01,  3.82it/s, reward=-1.66][A[A
+
+Train epoch [4]:  70%|███████   | 7/10 [00:01<00:00,  3.82it/s, reward=-1.66][A[A
+
+Train epoch [4]:  70%|███████   | 7/10 [00:02<00:00,  3.82it/s, reward=-1.67][A[A
+
+Train epoch [4]:  80%|████████  | 8/10 [00:02<00:00,  3.82it/s, reward=-1.67][A[A
+
+Train epoch [4]:  80%|████████  | 8/10 [00:02<00:00,  3.82it/s, reward=-1.67][A[A
+
+Train epoch [4]:  90%|█████████ | 9/10 [00:02<00:00,  3.82it/s, reward=-1.67][A[A
+
+Train epoch [4]:  90%|█████████ | 9/10 [00:02<00:00,  3.82it/s, reward=-1.69][A[A
+
+Train epoch [4]: 100%|██████████| 10/10 [00:02<00:00,  3.82it/s, reward=-1.69][A[ATrain epoch [4]: 100%|██████████| 10/10 [00:02<00:00,  3.82it/s, reward=-1.69]
+
+Update steps:  80%|████████  | 4/5 [00:10<00:02,  2.66s/it][A
+
+Train epoch [5]:   0%|          | 0/10 [00:00<?, ?it/s][A[A
+
+Train epoch [5]:   0%|          | 0/10 [00:00<?, ?it/s, reward=-1.65][A[A
+
+Train epoch [5]:  10%|█         | 1/10 [00:00<00:02,  3.81it/s, reward=-1.65][A[A
+
+Train epoch [5]:  10%|█         | 1/10 [00:00<00:02,  3.81it/s, reward=-1.75][A[A
+
+Train epoch [5]:  20%|██        | 2/10 [00:00<00:02,  3.82it/s, reward=-1.75][A[A
+
+Train epoch [5]:  20%|██        | 2/10 [00:00<00:02,  3.82it/s, reward=-1.67][A[A
+
+Train epoch [5]:  30%|███       | 3/10 [00:00<00:01,  3.82it/s, reward=-1.67][A[A
+
+Train epoch [5]:  30%|███       | 3/10 [00:01<00:01,  3.82it/s, reward=-1.67][A[A
+
+Train epoch [5]:  40%|████      | 4/10 [00:01<00:01,  3.82it/s, reward=-1.67][A[A
+
+Train epoch [5]:  40%|████      | 4/10 [00:01<00:01,  3.82it/s, reward=-1.73][A[A
+
+Train epoch [5]:  50%|█████     | 5/10 [00:01<00:01,  3.82it/s, reward=-1.73][A[A
+
+Train epoch [5]:  50%|█████     | 5/10 [00:01<00:01,  3.82it/s, reward=-1.67][A[A
+
+Train epoch [5]:  60%|██████    | 6/10 [00:01<00:01,  3.82it/s, reward=-1.67][A[A
+
+Train epoch [5]:  60%|██████    | 6/10 [00:01<00:01,  3.82it/s, reward=-1.66][A[A
+
+Train epoch [5]:  70%|███████   | 7/10 [00:01<00:00,  3.82it/s, reward=-1.66][A[A
+
+Train epoch [5]:  70%|███████   | 7/10 [00:02<00:00,  3.82it/s, reward=-1.74][A[A
+
+Train epoch [5]:  80%|████████  | 8/10 [00:02<00:00,  3.82it/s, reward=-1.74][A[A
+
+Train epoch [5]:  80%|████████  | 8/10 [00:02<00:00,  3.82it/s, reward=-1.72][A[A
+
+Train epoch [5]:  90%|█████████ | 9/10 [00:02<00:00,  3.82it/s, reward=-1.72][A[A
+
+Train epoch [5]:  90%|█████████ | 9/10 [00:02<00:00,  3.82it/s, reward=-1.61][A[A
+
+Train epoch [5]: 100%|██████████| 10/10 [00:02<00:00,  3.82it/s, reward=-1.61][A[ATrain epoch [5]: 100%|██████████| 10/10 [00:02<00:00,  3.82it/s, reward=-1.61]
+
+Update steps: 100%|██████████| 5/5 [00:13<00:00,  2.65s/it][AUpdate steps: 100%|██████████| 5/5 [00:13<00:00,  2.68s/it]
+Episodes:  80%|████████  | 8/10 [23:09<05:49, 174.54s/it]
+Collect steps:   0%|          | 0/10 [00:00<?, ?it/s][A
+Collect steps:  10%|█         | 1/10 [00:16<02:29, 16.60s/it][A
+Collect steps:  20%|██        | 2/10 [00:32<02:11, 16.47s/it][A
+Collect steps:  30%|███       | 3/10 [00:49<01:54, 16.43s/it][A
+Collect steps:  40%|████      | 4/10 [01:05<01:38, 16.41s/it][A
+Collect steps:  50%|█████     | 5/10 [01:22<01:22, 16.40s/it][A
+Collect steps:  60%|██████    | 6/10 [01:38<01:05, 16.39s/it][A
+Collect steps:  70%|███████   | 7/10 [01:54<00:49, 16.39s/it][A
+Collect steps:  80%|████████  | 8/10 [02:11<00:32, 16.36s/it][A
+Collect steps:  90%|█████████ | 9/10 [02:27<00:16, 16.20s/it][A
+Collect steps: 100%|██████████| 10/10 [02:42<00:00, 16.05s/it][ACollect steps: 100%|██████████| 10/10 [02:42<00:00, 16.27s/it]
+
+Update steps:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+Train epoch [1]:   0%|          | 0/10 [00:00<?, ?it/s][A[A
+
+Train epoch [1]:   0%|          | 0/10 [00:00<?, ?it/s, reward=-1.74][A[A
+
+Train epoch [1]:  10%|█         | 1/10 [00:00<00:02,  3.82it/s, reward=-1.74][A[A
+
+Train epoch [1]:  10%|█         | 1/10 [00:00<00:02,  3.82it/s, reward=-1.62][A[A
+
+Train epoch [1]:  20%|██        | 2/10 [00:00<00:02,  3.83it/s, reward=-1.62][A[A
+
+Train epoch [1]:  20%|██        | 2/10 [00:00<00:02,  3.83it/s, reward=-1.6] [A[A
+
+Train epoch [1]:  30%|███       | 3/10 [00:00<00:01,  3.84it/s, reward=-1.6][A[A
+
+Train epoch [1]:  30%|███       | 3/10 [00:01<00:01,  3.84it/s, reward=-1.69][A[A
+
+Train epoch [1]:  40%|████      | 4/10 [00:01<00:01,  3.84it/s, reward=-1.69][A[A
+
+Train epoch [1]:  40%|████      | 4/10 [00:01<00:01,  3.84it/s, reward=-1.67][A[A
+
+Train epoch [1]:  50%|█████     | 5/10 [00:01<00:01,  3.84it/s, reward=-1.67][A[A
+
+Train epoch [1]:  50%|█████     | 5/10 [00:01<00:01,  3.84it/s, reward=-1.77][A[A
+
+Train epoch [1]:  60%|██████    | 6/10 [00:01<00:01,  3.84it/s, reward=-1.77][A[A
+
+Train epoch [1]:  60%|██████    | 6/10 [00:01<00:01,  3.84it/s, reward=-1.64][A[A
+
+Train epoch [1]:  70%|███████   | 7/10 [00:01<00:00,  3.84it/s, reward=-1.64][A[A
+
+Train epoch [1]:  70%|███████   | 7/10 [00:02<00:00,  3.84it/s, reward=-1.75][A[A
+
+Train epoch [1]:  80%|████████  | 8/10 [00:02<00:00,  3.84it/s, reward=-1.75][A[A
+
+Train epoch [1]:  80%|████████  | 8/10 [00:02<00:00,  3.84it/s, reward=-1.87][A[A
+
+Train epoch [1]:  90%|█████████ | 9/10 [00:02<00:00,  3.84it/s, reward=-1.87][A[A
+
+Train epoch [1]:  90%|█████████ | 9/10 [00:02<00:00,  3.84it/s, reward=-1.8] [A[A
+
+Train epoch [1]: 100%|██████████| 10/10 [00:02<00:00,  3.84it/s, reward=-1.8][A[ATrain epoch [1]: 100%|██████████| 10/10 [00:02<00:00,  3.84it/s, reward=-1.8]
+
+Update steps:  20%|██        | 1/5 [00:02<00:11,  2.87s/it][A
+
+Train epoch [2]:   0%|          | 0/10 [00:00<?, ?it/s][A[A
+
+Train epoch [2]:   0%|          | 0/10 [00:00<?, ?it/s, reward=-1.67][A[A
+
+Train epoch [2]:  10%|█         | 1/10 [00:00<00:02,  3.84it/s, reward=-1.67][A[A
+
+Train epoch [2]:  10%|█         | 1/10 [00:00<00:02,  3.84it/s, reward=-1.63][A[A
+
+Train epoch [2]:  20%|██        | 2/10 [00:00<00:02,  3.84it/s, reward=-1.63][A[A
+
+Train epoch [2]:  20%|██        | 2/10 [00:00<00:02,  3.84it/s, reward=-1.72][A[A
+
+Train epoch [2]:  30%|███       | 3/10 [00:00<00:01,  3.84it/s, reward=-1.72][A[A
+
+Train epoch [2]:  30%|███       | 3/10 [00:01<00:01,  3.84it/s, reward=-1.5] [A[A
+
+Train epoch [2]:  40%|████      | 4/10 [00:01<00:01,  3.84it/s, reward=-1.5][A[A
+
+Train epoch [2]:  40%|████      | 4/10 [00:01<00:01,  3.84it/s, reward=-1.73][A[A
+
+Train epoch [2]:  50%|█████     | 5/10 [00:01<00:01,  3.84it/s, reward=-1.73][A[A
+
+Train epoch [2]:  50%|█████     | 5/10 [00:01<00:01,  3.84it/s, reward=-1.75][A[A
+
+Train epoch [2]:  60%|██████    | 6/10 [00:01<00:01,  3.84it/s, reward=-1.75][A[A
+
+Train epoch [2]:  60%|██████    | 6/10 [00:01<00:01,  3.84it/s, reward=-1.79][A[A
+
+Train epoch [2]:  70%|███████   | 7/10 [00:01<00:00,  3.84it/s, reward=-1.79][A[A
+
+Train epoch [2]:  70%|███████   | 7/10 [00:02<00:00,  3.84it/s, reward=-1.79][A[A
+
+Train epoch [2]:  80%|████████  | 8/10 [00:02<00:00,  3.84it/s, reward=-1.79][A[A
+
+Train epoch [2]:  80%|████████  | 8/10 [00:02<00:00,  3.84it/s, reward=-1.75][A[A
+
+Train epoch [2]:  90%|█████████ | 9/10 [00:02<00:00,  3.84it/s, reward=-1.75][A[A
+
+Train epoch [2]:  90%|█████████ | 9/10 [00:02<00:00,  3.84it/s, reward=-1.83][A[A
+
+Train epoch [2]: 100%|██████████| 10/10 [00:02<00:00,  3.84it/s, reward=-1.83][A[ATrain epoch [2]: 100%|██████████| 10/10 [00:02<00:00,  3.84it/s, reward=-1.83]
+
+Update steps:  40%|████      | 2/5 [00:05<00:08,  2.72s/it][A
+
+Train epoch [3]:   0%|          | 0/10 [00:00<?, ?it/s][A[A
+
+Train epoch [3]:   0%|          | 0/10 [00:00<?, ?it/s, reward=-1.64][A[A
+
+Train epoch [3]:  10%|█         | 1/10 [00:00<00:02,  3.84it/s, reward=-1.64][A[A
+
+Train epoch [3]:  10%|█         | 1/10 [00:00<00:02,  3.84it/s, reward=-1.75][A[A
+
+Train epoch [3]:  20%|██        | 2/10 [00:00<00:02,  3.84it/s, reward=-1.75][A[A
+
+Train epoch [3]:  20%|██        | 2/10 [00:00<00:02,  3.84it/s, reward=-1.7] [A[A
+
+Train epoch [3]:  30%|███       | 3/10 [00:00<00:01,  3.84it/s, reward=-1.7][A[A
+
+Train epoch [3]:  30%|███       | 3/10 [00:01<00:01,  3.84it/s, reward=-1.59][A[A
+
+Train epoch [3]:  40%|████      | 4/10 [00:01<00:01,  3.84it/s, reward=-1.59][A[A
+
+Train epoch [3]:  40%|████      | 4/10 [00:01<00:01,  3.84it/s, reward=-1.8] [A[A
+
+Train epoch [3]:  50%|█████     | 5/10 [00:01<00:01,  3.84it/s, reward=-1.8][A[A
+
+Train epoch [3]:  50%|█████     | 5/10 [00:01<00:01,  3.84it/s, reward=-1.58][A[A
+
+Train epoch [3]:  60%|██████    | 6/10 [00:01<00:01,  3.84it/s, reward=-1.58][A[A
+
+Train epoch [3]:  60%|██████    | 6/10 [00:01<00:01,  3.84it/s, reward=-1.75][A[A
+
+Train epoch [3]:  70%|███████   | 7/10 [00:01<00:00,  3.84it/s, reward=-1.75][A[A
+
+Train epoch [3]:  70%|███████   | 7/10 [00:02<00:00,  3.84it/s, reward=-1.9] [A[A
+
+Train epoch [3]:  80%|████████  | 8/10 [00:02<00:00,  3.84it/s, reward=-1.9][A[A
+
+Train epoch [3]:  80%|████████  | 8/10 [00:02<00:00,  3.84it/s, reward=-1.67][A[A
+
+Train epoch [3]:  90%|█████████ | 9/10 [00:02<00:00,  3.83it/s, reward=-1.67][A[A
+
+Train epoch [3]:  90%|█████████ | 9/10 [00:02<00:00,  3.83it/s, reward=-1.78][A[A
+
+Train epoch [3]: 100%|██████████| 10/10 [00:02<00:00,  3.83it/s, reward=-1.78][A[ATrain epoch [3]: 100%|██████████| 10/10 [00:02<00:00,  3.83it/s, reward=-1.78]
+
+Update steps:  60%|██████    | 3/5 [00:08<00:05,  2.67s/it][A
+
+Train epoch [4]:   0%|          | 0/10 [00:00<?, ?it/s][A[A
+
+Train epoch [4]:   0%|          | 0/10 [00:00<?, ?it/s, reward=-1.75][A[A
+
+Train epoch [4]:  10%|█         | 1/10 [00:00<00:02,  3.84it/s, reward=-1.75][A[A
+
+Train epoch [4]:  10%|█         | 1/10 [00:00<00:02,  3.84it/s, reward=-1.78][A[A
+
+Train epoch [4]:  20%|██        | 2/10 [00:00<00:02,  3.84it/s, reward=-1.78][A[A
+
+Train epoch [4]:  20%|██        | 2/10 [00:00<00:02,  3.84it/s, reward=-1.72][A[A
+
+Train epoch [4]:  30%|███       | 3/10 [00:00<00:01,  3.84it/s, reward=-1.72][A[A
+
+Train epoch [4]:  30%|███       | 3/10 [00:01<00:01,  3.84it/s, reward=-1.7] [A[A
+
+Train epoch [4]:  40%|████      | 4/10 [00:01<00:01,  3.84it/s, reward=-1.7][A[A
+
+Train epoch [4]:  40%|████      | 4/10 [00:01<00:01,  3.84it/s, reward=-1.7][A[A
+
+Train epoch [4]:  50%|█████     | 5/10 [00:01<00:01,  3.84it/s, reward=-1.7][A[A
+
+Train epoch [4]:  50%|█████     | 5/10 [00:01<00:01,  3.84it/s, reward=-1.81][A[A
+
+Train epoch [4]:  60%|██████    | 6/10 [00:01<00:01,  3.84it/s, reward=-1.81][A[A
+
+Train epoch [4]:  60%|██████    | 6/10 [00:01<00:01,  3.84it/s, reward=-1.65][A[A
+
+Train epoch [4]:  70%|███████   | 7/10 [00:01<00:00,  3.83it/s, reward=-1.65][A[A
+
+Train epoch [4]:  70%|███████   | 7/10 [00:02<00:00,  3.83it/s, reward=-1.65][A[A
+
+Train epoch [4]:  80%|████████  | 8/10 [00:02<00:00,  3.84it/s, reward=-1.65][A[A
+
+Train epoch [4]:  80%|████████  | 8/10 [00:02<00:00,  3.84it/s, reward=-1.73][A[A
+
+Train epoch [4]:  90%|█████████ | 9/10 [00:02<00:00,  3.84it/s, reward=-1.73][A[A
+
+Train epoch [4]:  90%|█████████ | 9/10 [00:02<00:00,  3.84it/s, reward=-1.65][A[A
+
+Train epoch [4]: 100%|██████████| 10/10 [00:02<00:00,  3.84it/s, reward=-1.65][A[ATrain epoch [4]: 100%|██████████| 10/10 [00:02<00:00,  3.84it/s, reward=-1.65]
+
+Update steps:  80%|████████  | 4/5 [00:10<00:02,  2.65s/it][A
+
+Train epoch [5]:   0%|          | 0/10 [00:00<?, ?it/s][A[A
+
+Train epoch [5]:   0%|          | 0/10 [00:00<?, ?it/s, reward=-1.73][A[A
+
+Train epoch [5]:  10%|█         | 1/10 [00:00<00:02,  3.84it/s, reward=-1.73][A[A
+
+Train epoch [5]:  10%|█         | 1/10 [00:00<00:02,  3.84it/s, reward=-1.88][A[A
+
+Train epoch [5]:  20%|██        | 2/10 [00:00<00:02,  3.84it/s, reward=-1.88][A[A
+
+Train epoch [5]:  20%|██        | 2/10 [00:00<00:02,  3.84it/s, reward=-1.87][A[A
+
+Train epoch [5]:  30%|███       | 3/10 [00:00<00:01,  3.84it/s, reward=-1.87][A[A
+
+Train epoch [5]:  30%|███       | 3/10 [00:01<00:01,  3.84it/s, reward=-1.56][A[A
+
+Train epoch [5]:  40%|████      | 4/10 [00:01<00:01,  3.84it/s, reward=-1.56][A[A
+
+Train epoch [5]:  40%|████      | 4/10 [00:01<00:01,  3.84it/s, reward=-1.65][A[A
+
+Train epoch [5]:  50%|█████     | 5/10 [00:01<00:01,  3.84it/s, reward=-1.65][A[A
+
+Train epoch [5]:  50%|█████     | 5/10 [00:01<00:01,  3.84it/s, reward=-1.66][A[A
+
+Train epoch [5]:  60%|██████    | 6/10 [00:01<00:01,  3.85it/s, reward=-1.66][A[A
+
+Train epoch [5]:  60%|██████    | 6/10 [00:01<00:01,  3.85it/s, reward=-1.78][A[A
+
+Train epoch [5]:  70%|███████   | 7/10 [00:01<00:00,  3.85it/s, reward=-1.78][A[A
+
+Train epoch [5]:  70%|███████   | 7/10 [00:02<00:00,  3.85it/s, reward=-1.65][A[A
+
+Train epoch [5]:  80%|████████  | 8/10 [00:02<00:00,  3.84it/s, reward=-1.65][A[A
+
+Train epoch [5]:  80%|████████  | 8/10 [00:02<00:00,  3.84it/s, reward=-1.63][A[A
+
+Train epoch [5]:  90%|█████████ | 9/10 [00:02<00:00,  3.84it/s, reward=-1.63][A[A
+
+Train epoch [5]:  90%|█████████ | 9/10 [00:02<00:00,  3.84it/s, reward=-1.75][A[A
+
+Train epoch [5]: 100%|██████████| 10/10 [00:02<00:00,  3.84it/s, reward=-1.75][A[ATrain epoch [5]: 100%|██████████| 10/10 [00:02<00:00,  3.84it/s, reward=-1.75]
+
+Update steps: 100%|██████████| 5/5 [00:13<00:00,  2.63s/it][AUpdate steps: 100%|██████████| 5/5 [00:13<00:00,  2.66s/it]
+Episodes:  90%|█████████ | 9/10 [26:05<02:55, 175.01s/it]
+Collect steps:   0%|          | 0/10 [00:00<?, ?it/s][A
+Collect steps:  10%|█         | 1/10 [00:15<02:23, 15.94s/it][A
+Collect steps:  20%|██        | 2/10 [00:31<02:06, 15.80s/it][A
+Collect steps:  30%|███       | 3/10 [00:47<01:50, 15.76s/it][A
+Collect steps:  40%|████      | 4/10 [01:03<01:34, 15.74s/it][A
+Collect steps:  50%|█████     | 5/10 [01:18<01:18, 15.62s/it][A
+Collect steps:  60%|██████    | 6/10 [01:34<01:02, 15.64s/it][A
+Collect steps:  70%|███████   | 7/10 [01:49<00:46, 15.65s/it][A
+Collect steps:  80%|████████  | 8/10 [02:05<00:31, 15.64s/it][A
+Collect steps:  90%|█████████ | 9/10 [02:21<00:15, 15.65s/it][A
+Collect steps: 100%|██████████| 10/10 [02:36<00:00, 15.65s/it][ACollect steps: 100%|██████████| 10/10 [02:36<00:00, 15.68s/it]
+
+Update steps:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+Train epoch [1]:   0%|          | 0/10 [00:00<?, ?it/s][A[A
+
+Train epoch [1]:   0%|          | 0/10 [00:00<?, ?it/s, reward=-1.74][A[A
+
+Train epoch [1]:  10%|█         | 1/10 [00:00<00:02,  3.81it/s, reward=-1.74][A[A
+
+Train epoch [1]:  10%|█         | 1/10 [00:00<00:02,  3.81it/s, reward=-1.64][A[A
+
+Train epoch [1]:  20%|██        | 2/10 [00:00<00:02,  3.83it/s, reward=-1.64][A[A
+
+Train epoch [1]:  20%|██        | 2/10 [00:00<00:02,  3.83it/s, reward=-1.78][A[A
+
+Train epoch [1]:  30%|███       | 3/10 [00:00<00:01,  3.83it/s, reward=-1.78][A[A
+
+Train epoch [1]:  30%|███       | 3/10 [00:01<00:01,  3.83it/s, reward=-1.75][A[A
+
+Train epoch [1]:  40%|████      | 4/10 [00:01<00:01,  3.83it/s, reward=-1.75][A[A
+
+Train epoch [1]:  40%|████      | 4/10 [00:01<00:01,  3.83it/s, reward=-1.82][A[A
+
+Train epoch [1]:  50%|█████     | 5/10 [00:01<00:01,  3.83it/s, reward=-1.82][A[A
+
+Train epoch [1]:  50%|█████     | 5/10 [00:01<00:01,  3.83it/s, reward=-1.67][A[A
+
+Train epoch [1]:  60%|██████    | 6/10 [00:01<00:01,  3.83it/s, reward=-1.67][A[A
+
+Train epoch [1]:  60%|██████    | 6/10 [00:01<00:01,  3.83it/s, reward=-1.8] [A[A
+
+Train epoch [1]:  70%|███████   | 7/10 [00:01<00:00,  3.84it/s, reward=-1.8][A[A
+
+Train epoch [1]:  70%|███████   | 7/10 [00:02<00:00,  3.84it/s, reward=-1.84][A[A
+
+Train epoch [1]:  80%|████████  | 8/10 [00:02<00:00,  3.84it/s, reward=-1.84][A[A
+
+Train epoch [1]:  80%|████████  | 8/10 [00:02<00:00,  3.84it/s, reward=-1.66][A[A
+
+Train epoch [1]:  90%|█████████ | 9/10 [00:02<00:00,  3.84it/s, reward=-1.66][A[A
+
+Train epoch [1]:  90%|█████████ | 9/10 [00:02<00:00,  3.84it/s, reward=-1.9] [A[A
+
+Train epoch [1]: 100%|██████████| 10/10 [00:02<00:00,  3.84it/s, reward=-1.9][A[ATrain epoch [1]: 100%|██████████| 10/10 [00:02<00:00,  3.84it/s, reward=-1.9]
+
+Update steps:  20%|██        | 1/5 [00:02<00:11,  2.88s/it][A
+
+Train epoch [2]:   0%|          | 0/10 [00:00<?, ?it/s][A[A
+
+Train epoch [2]:   0%|          | 0/10 [00:00<?, ?it/s, reward=-1.76][A[A
+
+Train epoch [2]:  10%|█         | 1/10 [00:00<00:02,  3.85it/s, reward=-1.76][A[A
+
+Train epoch [2]:  10%|█         | 1/10 [00:00<00:02,  3.85it/s, reward=-1.84][A[A
+
+Train epoch [2]:  20%|██        | 2/10 [00:00<00:02,  3.85it/s, reward=-1.84][A[A
+
+Train epoch [2]:  20%|██        | 2/10 [00:00<00:02,  3.85it/s, reward=-1.74][A[A
+
+Train epoch [2]:  30%|███       | 3/10 [00:00<00:01,  3.85it/s, reward=-1.74][A[A
+
+Train epoch [2]:  30%|███       | 3/10 [00:01<00:01,  3.85it/s, reward=-1.78][A[A
+
+Train epoch [2]:  40%|████      | 4/10 [00:01<00:01,  3.84it/s, reward=-1.78][A[A
+
+Train epoch [2]:  40%|████      | 4/10 [00:01<00:01,  3.84it/s, reward=-1.77][A[A
+
+Train epoch [2]:  50%|█████     | 5/10 [00:01<00:01,  3.84it/s, reward=-1.77][A[A
+
+Train epoch [2]:  50%|█████     | 5/10 [00:01<00:01,  3.84it/s, reward=-1.82][A[A
+
+Train epoch [2]:  60%|██████    | 6/10 [00:01<00:01,  3.84it/s, reward=-1.82][A[A
+
+Train epoch [2]:  60%|██████    | 6/10 [00:01<00:01,  3.84it/s, reward=-1.64][A[A
+
+Train epoch [2]:  70%|███████   | 7/10 [00:01<00:00,  3.84it/s, reward=-1.64][A[A
+
+Train epoch [2]:  70%|███████   | 7/10 [00:02<00:00,  3.84it/s, reward=-1.78][A[A
+
+Train epoch [2]:  80%|████████  | 8/10 [00:02<00:00,  3.84it/s, reward=-1.78][A[A
+
+Train epoch [2]:  80%|████████  | 8/10 [00:02<00:00,  3.84it/s, reward=-1.75][A[A
+
+Train epoch [2]:  90%|█████████ | 9/10 [00:02<00:00,  3.84it/s, reward=-1.75][A[A
+
+Train epoch [2]:  90%|█████████ | 9/10 [00:02<00:00,  3.84it/s, reward=-1.73][A[A
+
+Train epoch [2]: 100%|██████████| 10/10 [00:02<00:00,  3.84it/s, reward=-1.73][A[ATrain epoch [2]: 100%|██████████| 10/10 [00:02<00:00,  3.84it/s, reward=-1.73]
+
+Update steps:  40%|████      | 2/5 [00:05<00:08,  2.72s/it][A
+
+Train epoch [3]:   0%|          | 0/10 [00:00<?, ?it/s][A[A
+
+Train epoch [3]:   0%|          | 0/10 [00:00<?, ?it/s, reward=-1.69][A[A
+
+Train epoch [3]:  10%|█         | 1/10 [00:00<00:02,  3.86it/s, reward=-1.69][A[A
+
+Train epoch [3]:  10%|█         | 1/10 [00:00<00:02,  3.86it/s, reward=-1.73][A[A
+
+Train epoch [3]:  20%|██        | 2/10 [00:00<00:02,  3.85it/s, reward=-1.73][A[A
+
+Train epoch [3]:  20%|██        | 2/10 [00:00<00:02,  3.85it/s, reward=-1.72][A[A
+
+Train epoch [3]:  30%|███       | 3/10 [00:00<00:01,  3.84it/s, reward=-1.72][A[A
+
+Train epoch [3]:  30%|███       | 3/10 [00:01<00:01,  3.84it/s, reward=-1.77][A[A
+
+Train epoch [3]:  40%|████      | 4/10 [00:01<00:01,  3.84it/s, reward=-1.77][A[A
+
+Train epoch [3]:  40%|████      | 4/10 [00:01<00:01,  3.84it/s, reward=-1.73][A[A
+
+Train epoch [3]:  50%|█████     | 5/10 [00:01<00:01,  3.84it/s, reward=-1.73][A[A
+
+Train epoch [3]:  50%|█████     | 5/10 [00:01<00:01,  3.84it/s, reward=-1.75][A[A
+
+Train epoch [3]:  60%|██████    | 6/10 [00:01<00:01,  3.84it/s, reward=-1.75][A[A
+
+Train epoch [3]:  60%|██████    | 6/10 [00:01<00:01,  3.84it/s, reward=-1.68][A[A
+
+Train epoch [3]:  70%|███████   | 7/10 [00:01<00:00,  3.84it/s, reward=-1.68][A[A
+
+Train epoch [3]:  70%|███████   | 7/10 [00:02<00:00,  3.84it/s, reward=-1.84][A[A
+
+Train epoch [3]:  80%|████████  | 8/10 [00:02<00:00,  3.84it/s, reward=-1.84][A[A
+
+Train epoch [3]:  80%|████████  | 8/10 [00:02<00:00,  3.84it/s, reward=-1.95][A[A
+
+Train epoch [3]:  90%|█████████ | 9/10 [00:02<00:00,  3.84it/s, reward=-1.95][A[A
+
+Train epoch [3]:  90%|█████████ | 9/10 [00:02<00:00,  3.84it/s, reward=-1.73][A[A
+
+Train epoch [3]: 100%|██████████| 10/10 [00:02<00:00,  3.84it/s, reward=-1.73][A[ATrain epoch [3]: 100%|██████████| 10/10 [00:02<00:00,  3.84it/s, reward=-1.73]
+
+Update steps:  60%|██████    | 3/5 [00:08<00:05,  2.67s/it][A
+
+Train epoch [4]:   0%|          | 0/10 [00:00<?, ?it/s][A[A
+
+Train epoch [4]:   0%|          | 0/10 [00:00<?, ?it/s, reward=-1.84][A[A
+
+Train epoch [4]:  10%|█         | 1/10 [00:00<00:02,  3.84it/s, reward=-1.84][A[A
+
+Train epoch [4]:  10%|█         | 1/10 [00:00<00:02,  3.84it/s, reward=-1.69][A[A
+
+Train epoch [4]:  20%|██        | 2/10 [00:00<00:02,  3.84it/s, reward=-1.69][A[A
+
+Train epoch [4]:  20%|██        | 2/10 [00:00<00:02,  3.84it/s, reward=-1.71][A[A
+
+Train epoch [4]:  30%|███       | 3/10 [00:00<00:01,  3.83it/s, reward=-1.71][A[A
+
+Train epoch [4]:  30%|███       | 3/10 [00:01<00:01,  3.83it/s, reward=-1.55][A[A
+
+Train epoch [4]:  40%|████      | 4/10 [00:01<00:01,  3.84it/s, reward=-1.55][A[A
+
+Train epoch [4]:  40%|████      | 4/10 [00:01<00:01,  3.84it/s, reward=-1.76][A[A
+
+Train epoch [4]:  50%|█████     | 5/10 [00:01<00:01,  3.84it/s, reward=-1.76][A[A
+
+Train epoch [4]:  50%|█████     | 5/10 [00:01<00:01,  3.84it/s, reward=-1.8] [A[A
+
+Train epoch [4]:  60%|██████    | 6/10 [00:01<00:01,  3.84it/s, reward=-1.8][A[A
+
+Train epoch [4]:  60%|██████    | 6/10 [00:01<00:01,  3.84it/s, reward=-1.94][A[A
+
+Train epoch [4]:  70%|███████   | 7/10 [00:01<00:00,  3.84it/s, reward=-1.94][A[A
+
+Train epoch [4]:  70%|███████   | 7/10 [00:02<00:00,  3.84it/s, reward=-1.81][A[A
+
+Train epoch [4]:  80%|████████  | 8/10 [00:02<00:00,  3.84it/s, reward=-1.81][A[A
+
+Train epoch [4]:  80%|████████  | 8/10 [00:02<00:00,  3.84it/s, reward=-1.68][A[A
+
+Train epoch [4]:  90%|█████████ | 9/10 [00:02<00:00,  3.84it/s, reward=-1.68][A[A
+
+Train epoch [4]:  90%|█████████ | 9/10 [00:02<00:00,  3.84it/s, reward=-1.83][A[A
+
+Train epoch [4]: 100%|██████████| 10/10 [00:02<00:00,  3.84it/s, reward=-1.83][A[ATrain epoch [4]: 100%|██████████| 10/10 [00:02<00:00,  3.84it/s, reward=-1.83]
+
+Update steps:  80%|████████  | 4/5 [00:10<00:02,  2.64s/it][A
+
+Train epoch [5]:   0%|          | 0/10 [00:00<?, ?it/s][A[A
+
+Train epoch [5]:   0%|          | 0/10 [00:00<?, ?it/s, reward=-1.73][A[A
+
+Train epoch [5]:  10%|█         | 1/10 [00:00<00:02,  3.83it/s, reward=-1.73][A[A
+
+Train epoch [5]:  10%|█         | 1/10 [00:00<00:02,  3.83it/s, reward=-1.81][A[A
+
+Train epoch [5]:  20%|██        | 2/10 [00:00<00:02,  3.84it/s, reward=-1.81][A[A
+
+Train epoch [5]:  20%|██        | 2/10 [00:00<00:02,  3.84it/s, reward=-1.65][A[A
+
+Train epoch [5]:  30%|███       | 3/10 [00:00<00:01,  3.84it/s, reward=-1.65][A[A
+
+Train epoch [5]:  30%|███       | 3/10 [00:01<00:01,  3.84it/s, reward=-1.66][A[A
+
+Train epoch [5]:  40%|████      | 4/10 [00:01<00:01,  3.84it/s, reward=-1.66][A[A
+
+Train epoch [5]:  40%|████      | 4/10 [00:01<00:01,  3.84it/s, reward=-1.85][A[A
+
+Train epoch [5]:  50%|█████     | 5/10 [00:01<00:01,  3.84it/s, reward=-1.85][A[A
+
+Train epoch [5]:  50%|█████     | 5/10 [00:01<00:01,  3.84it/s, reward=-1.78][A[A
+
+Train epoch [5]:  60%|██████    | 6/10 [00:01<00:01,  3.84it/s, reward=-1.78][A[A
+
+Train epoch [5]:  60%|██████    | 6/10 [00:01<00:01,  3.84it/s, reward=-1.73][A[A
+
+Train epoch [5]:  70%|███████   | 7/10 [00:01<00:00,  3.84it/s, reward=-1.73][A[A
+
+Train epoch [5]:  70%|███████   | 7/10 [00:02<00:00,  3.84it/s, reward=-1.76][A[A
+
+Train epoch [5]:  80%|████████  | 8/10 [00:02<00:00,  3.84it/s, reward=-1.76][A[A
+
+Train epoch [5]:  80%|████████  | 8/10 [00:02<00:00,  3.84it/s, reward=-1.8] [A[A
+
+Train epoch [5]:  90%|█████████ | 9/10 [00:02<00:00,  3.84it/s, reward=-1.8][A[A
+
+Train epoch [5]:  90%|█████████ | 9/10 [00:02<00:00,  3.84it/s, reward=-1.84][A[A
+
+Train epoch [5]: 100%|██████████| 10/10 [00:02<00:00,  3.84it/s, reward=-1.84][A[ATrain epoch [5]: 100%|██████████| 10/10 [00:02<00:00,  3.84it/s, reward=-1.84]
+
+Update steps: 100%|██████████| 5/5 [00:13<00:00,  2.63s/it][AUpdate steps: 100%|██████████| 5/5 [00:13<00:00,  2.66s/it]
+Episodes: 100%|██████████| 10/10 [28:55<00:00, 173.49s/it]Episodes: 100%|██████████| 10/10 [28:55<00:00, 173.52s/it]
