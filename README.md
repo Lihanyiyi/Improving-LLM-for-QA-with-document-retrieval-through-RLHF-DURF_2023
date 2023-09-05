@@ -8,7 +8,7 @@ This project is based on Coati and does the following:
 - Training reward model through a sequence labeling task 
 - Reinforcement learning with human feedback (token unit update)
 
-Description of problem
+Description of problem\n
 Our Task is to apply a different way of the RLHF process–changing the way to give human feedback and set up the reward model, fine-tuning a large language model to do the generative question-answering task, and finally observe whether the specific reward model and the reinforcement learning process can reduce the hallucinations in the generative answers.
 We use the dataset originally from the “Faulty Directory” on NYU Shanghai Official Website (link). This dataset contains the basic information of 280 professors at NYU Shanghai, including their emails, their education level, and the courses they teach. The training and validation datasets for question-answering are created manually. There are 4 types of questions in total, which are about professors’ email addresses, professors’ highest degree, courses professors teach, and which professors teach specific courses.
 
