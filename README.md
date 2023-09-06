@@ -21,12 +21,13 @@ In general, the training process includes 3 stages, which is in line with the tr
   </p>
 
 Image source: https://openai.com/blog/chatgpt
-</div>
 
 Figure 1: A diagram illustrating the three steps of our method: (1) supervised fine-tuning (SFT), (2)
 reward model (RM) training, and (3) reinforcement learning via proximal policy optimization (PPO)
 on this reward model. Blue arrows indicate that this data is used to train one of our models. In Step 2,
 boxes A-D are samples from our models that get ranked by labelers.
+</div>
+
 
 Though the general 3 steps are the same, the methods for doing the second step are different. Instead of collecting comparison data, and generating several model outputs for ranking, we use sequence-labeling techniques to train the reward model. We use label-studio and label each token with one of 5 labels, including irrelevant, hallucination, unknown, related information and relevant truth. The definitions of 5 labels are as follows. 
 Irrelevant: Have no connection with the query
