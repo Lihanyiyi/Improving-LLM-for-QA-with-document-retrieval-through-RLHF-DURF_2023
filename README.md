@@ -35,18 +35,7 @@ Hallucination: the information has direct connection with the query but it is no
 Unknown: Has a slight connection or padding token with the query, such as “Thanks!”
 Related information: Not a direct answer but true and somewhat helpful to the question
 Relevant truth: True and direct information that can answer the query
-Each label has a corresponding score, shown in the table below.
-
-Irrelevant
-Hallucination
-Unknown
-Related information
-Relevant truth
--5
--2
-0
-3
-5
+Each label has a corresponding score. 'Irrelevant', 'Hallucination', 'Unknown', 'Related information', and 'Relevant truth' have respectfully -5, -2, 0, 3, 5.
 
 
 The reward model is built to give the probability for each label assigned to each token and calculate the reward for each token with matrix multiplication. Lastly we sum the reward for each token to get the reward for the whole answer and do step 3.  
