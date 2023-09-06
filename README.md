@@ -15,6 +15,12 @@ We use the dataset originally from the “Faulty Directory” on NYU Shanghai Of
 ## Methodology
 In general, the training process includes 3 stages, which is in line with the training method introduced by OpenAI, including supervised fine-tuning, reward model training and reinforcement learning via proximal policy optimization (PPO) on this reward model.(Ouyang et al. 2022) The diagram for 3 steps fine-tuning introduced by OpenAI are as follows.(Ouyang et al. 2022) 
 
+<div align="center">
+  <p align="center">
+    <img src="https://raw.githubusercontent.com/hpcaitech/public_assets/main/applications/chatgpt/chatgpt.png" width=700/>
+  </p>
+
+Image source: https://openai.com/blog/chatgpt
 
 Figure 1: A diagram illustrating the three steps of our method: (1) supervised fine-tuning (SFT), (2)
 reward model (RM) training, and (3) reinforcement learning via proximal policy optimization (PPO)
