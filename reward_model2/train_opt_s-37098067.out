@@ -1,0 +1,159 @@
+length 281
+OPTConfig {
+  "_name_or_path": "facebook/opt-350m",
+  "_remove_final_layer_norm": false,
+  "activation_dropout": 0.0,
+  "activation_function": "relu",
+  "architectures": [
+    "OPTForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 2,
+  "do_layer_norm_before": false,
+  "dropout": 0.1,
+  "enable_bias": true,
+  "eos_token_id": 2,
+  "ffn_dim": 4096,
+  "hidden_size": 1024,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1",
+    "2": "LABEL_2",
+    "3": "LABEL_3",
+    "4": "LABEL_4"
+  },
+  "init_std": 0.02,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1,
+    "LABEL_2": 2,
+    "LABEL_3": 3,
+    "LABEL_4": 4
+  },
+  "layer_norm_elementwise_affine": true,
+  "layerdrop": 0.0,
+  "max_position_embeddings": 2048,
+  "model_type": "opt",
+  "num_attention_heads": 16,
+  "num_hidden_layers": 24,
+  "pad_token_id": 1,
+  "prefix": "</s>",
+  "torch_dtype": "float16",
+  "transformers_version": "4.30.2",
+  "use_cache": true,
+  "vocab_size": 50272,
+  "word_embed_proj_dim": 512
+}
+
+OPTForTokenClassification(
+  (transformer): OPTModel(
+    (decoder): OPTDecoder(
+      (embed_tokens): Embedding(50272, 512, padding_idx=1)
+      (embed_positions): OPTLearnedPositionalEmbedding(2050, 1024)
+      (project_out): Linear(in_features=1024, out_features=512, bias=False)
+      (project_in): Linear(in_features=512, out_features=1024, bias=False)
+      (layers): ModuleList(
+        (0-23): 24 x OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+            (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+            (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+            (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+          (fc1): Linear(in_features=1024, out_features=4096, bias=True)
+          (fc2): Linear(in_features=4096, out_features=1024, bias=True)
+          (final_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        )
+      )
+    )
+  )
+  (dropout): Dropout(p=0.1, inplace=False)
+  (classifier): Linear(in_features=512, out_features=5, bias=False)
+)
+Epoch 51/100, Loss: 0.2834
+Epoch 52/100, Loss: 0.1990
+Epoch 53/100, Loss: 0.1728
+Epoch 54/100, Loss: 0.1341
+Epoch 55/100, Loss: 0.1226
+Epoch 56/100, Loss: 0.1187
+Epoch 57/100, Loss: 0.1164
+Epoch 58/100, Loss: 0.1053
+Epoch 59/100, Loss: 0.0960
+Epoch 60/100, Loss: 0.0913
+Epoch 61/100, Loss: 0.0939
+Epoch 62/100, Loss: 0.0981
+Epoch 63/100, Loss: 0.0877
+Epoch 64/100, Loss: 0.0745
+Epoch 65/100, Loss: 0.0751
+Epoch 66/100, Loss: 0.0960
+Epoch 67/100, Loss: 0.0869
+Epoch 68/100, Loss: 0.0828
+Epoch 69/100, Loss: 0.0669
+Epoch 70/100, Loss: 0.0588
+Epoch 71/100, Loss: 0.0671
+Epoch 72/100, Loss: 0.0600
+Epoch 73/100, Loss: 0.0498
+Epoch 74/100, Loss: 0.0442
+Epoch 75/100, Loss: 0.0440
+Epoch 76/100, Loss: 0.0513
+Epoch 77/100, Loss: 0.0521
+Epoch 78/100, Loss: 0.1642
+Epoch 79/100, Loss: 0.0971
+Epoch 80/100, Loss: 0.0612
+Epoch 81/100, Loss: 0.0481
+Epoch 82/100, Loss: 0.0441
+Epoch 83/100, Loss: 0.0368
+Epoch 84/100, Loss: 0.0352
+Epoch 85/100, Loss: 0.0310
+Epoch 86/100, Loss: 0.0307
+Epoch 87/100, Loss: 0.0354
+Epoch 88/100, Loss: 0.0349
+Epoch 89/100, Loss: 0.0399
+Epoch 90/100, Loss: 0.0578
+Epoch 91/100, Loss: 0.0418
+Epoch 92/100, Loss: 0.0930
+Epoch 93/100, Loss: 0.0559
+Epoch 94/100, Loss: 0.0391
+Epoch 95/100, Loss: 0.0348
+Epoch 96/100, Loss: 0.0309
+Epoch 97/100, Loss: 0.0297
+Epoch 98/100, Loss: 0.0281
+Epoch 99/100, Loss: 0.0253
+Epoch 100/100, Loss: 0.0212
+Traceback (most recent call last):
+  File "/scratch/yl9315/reward_model2/./train_r_opt.py", line 82, in <module>
+    outputs = model(input_ids=input_ids, attention_mask=attention_mask, labels=labels,return_dict=True)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/yl9315/miniconda3/envs/durf/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/yl9315/reward_model2/optfortoken.py", line 42, in forward
+    transformer_outputs = self.transformer(
+                          ^^^^^^^^^^^^^^^^^
+  File "/scratch/yl9315/miniconda3/envs/durf/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/yl9315/miniconda3/envs/durf/lib/python3.11/site-packages/transformers/models/opt/modeling_opt.py", line 796, in forward
+    decoder_outputs = self.decoder(
+                      ^^^^^^^^^^^^^
+  File "/scratch/yl9315/miniconda3/envs/durf/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/yl9315/miniconda3/envs/durf/lib/python3.11/site-packages/transformers/models/opt/modeling_opt.py", line 711, in forward
+    layer_outputs = decoder_layer(
+                    ^^^^^^^^^^^^^^
+  File "/scratch/yl9315/miniconda3/envs/durf/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/yl9315/miniconda3/envs/durf/lib/python3.11/site-packages/transformers/models/opt/modeling_opt.py", line 331, in forward
+    hidden_states, self_attn_weights, present_key_value = self.self_attn(
+                                                          ^^^^^^^^^^^^^^^
+  File "/scratch/yl9315/miniconda3/envs/durf/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/yl9315/miniconda3/envs/durf/lib/python3.11/site-packages/transformers/models/opt/modeling_opt.py", line 211, in forward
+    attn_weights = torch.bmm(query_states, key_states.transpose(1, 2))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 1024.00 MiB (GPU 0; 79.15 GiB total capacity; 77.77 GiB already allocated; 58.06 MiB free; 78.58 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
