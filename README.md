@@ -16,33 +16,12 @@ We use the dataset originally from the “Faulty Directory” on NYU Shanghai Of
 In general, the training process includes 3 stages, which is in line with the training method introduced by OpenAI, including supervised fine-tuning, reward model training and reinforcement learning via proximal policy optimization (PPO) on this reward model.(Ouyang et al. 2022) The diagram for 3 steps fine-tuning introduced by OpenAI are as follows.(Ouyang et al. 2022) 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Figure 1: A diagram illustrating the three steps of our method: (1) supervised fine-tuning (SFT), (2)
 reward model (RM) training, and (3) reinforcement learning via proximal policy optimization (PPO)
 on this reward model. Blue arrows indicate that this data is used to train one of our models. In Step 2,
 boxes A-D are samples from our models that get ranked by labelers.
 
-Though the general 3 steps are the same, the methods for doing the second step are different. Instead of collecting comparison data, and generating several model outputs for ranking, we use sequence-labeling techniques to train the reward model. We label each token with one of 5 labels, including irrelevant, hallucination, unknown, related information and relevant truth. The definitions of 5 labels are as follows. 
+Though the general 3 steps are the same, the methods for doing the second step are different. Instead of collecting comparison data, and generating several model outputs for ranking, we use sequence-labeling techniques to train the reward model. We use label-studio and label each token with one of 5 labels, including irrelevant, hallucination, unknown, related information and relevant truth. The definitions of 5 labels are as follows. 
 Irrelevant: Have no connection with the query
 Hallucination: the information has direct connection with the query but it is not true
 Unknown: Has a slight connection or padding token with the query, such as “Thanks!”
@@ -88,12 +67,14 @@ The labels are manually assigned by us through the label studio. Then the labels
 ### 3.2 Model Creation & Evaluation
 For our language model, we use facebook/opt-2.7b as our base and test its zero-shot capacity on the problem set. The result was intuitively bad.
 We then fine-tune it with 8 LoRA ranks on our dataset with ground truth provided. The LoRA technique should prevent the model from forgetting too much of its learned ability.
+The code for finetuning and validating the model can be found in the folder sft-supervised-finetuning.
 #### 3.2.1 Reward model build-up and training
 In our plan, there are several probable approaches towards building the reward model. 
 One is the sequence-labeling technique. Since we need the reward model to provide scores to generate answers by detecting irrelevant generation and hallucination, we only need a classifier. In addition, as we want to improve on the PPO algorithm (which will be covered below) by providing a score to each of the tokens in the answer and give the model a more detailed update, this is a token classification task. 
 
-For this method, we tried two different models. We start with a lightweight gpt2 token classifier, and then an OPTModel (opt-350m) with a linear classifier added on the top. We think that utilizing large language models is a good way since the transformers and the data they are pre-trained with are meant to let them understand natural language.
+For this method, we tried two different models. We start with a lightweight gpt2 token classifier, and then an OPTModel (opt-350m) with a linear classifier added on the top. We think that utilizing large language models is a good way since the transformers and the data they are pre-trained with are meant to let them understand natural language. The code for the model structure can be found in reward_model2/optfortoken.py, and the codes for training and validation are in the same folder.
+
 Another method is to feed the data where each instruction has pairs of responses with one better than the other to the model and try to maximize the difference in scores between the pairs. Limited by the time, we didn’t use this method.
 #### 3.2.2 Reinforcement Learning with Human Feedback(RLHF)
-The third stage of the training is Reinforcement Learning with Human Feedback(RLHF). We experiment on our modified PPO algorithm which applies gradient descent to each of the tokens of the generated answer with different gradients. To do that, we modified the framework from ColossalAI(Bian et al. 2021) and allowed different rewards marked on different tokens in a response. We temporarily call it PPO+.
-We conduct two training sessions with the same reward model. In the first one, we train a model with lora_rank=8 from the initial opt-2.7b for causal language modeling. In the second, the model is trained from our fine-tuned opt with the same lora_rank.
+The third stage of the training is Reinforcement Learning with Human Feedback(RLHF). We experiment on our modified PPO algorithm which applies gradient descent to each of the tokens of the generated answer with different gradients. To do that, we modified the framework from ColossalAI(Bian et al. 2021) and allowed different rewards marked on different tokens in a response. We temporarily call it PPO+. We modified in ColossalAI/applications/Chat/coati the experience_maker, models/utils.py, and trainer/ppo.py.
+We conduct two training sessions with the same reward model. In the first one, we train a model with lora_rank=8 from the initial opt-2.7b for causal language modeling. In the second, the model is trained from our fine-tuned opt with the same lora_rank. 
