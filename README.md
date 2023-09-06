@@ -21,6 +21,7 @@ In general, the training process includes 3 stages, which is in line with the tr
   </p>
 
 Image source: https://openai.com/blog/chatgpt
+</div>
 
 Figure 1: A diagram illustrating the three steps of our method: (1) supervised fine-tuning (SFT), (2)
 reward model (RM) training, and (3) reinforcement learning via proximal policy optimization (PPO)
