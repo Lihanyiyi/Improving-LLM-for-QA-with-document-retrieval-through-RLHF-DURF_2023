@@ -1,0 +1,125 @@
+/home/yl9315/.bashrc: line 13: export: `PATHø': not a valid identifier
+srun: fatal: No command given to execute.
+GPT2TokenizerFast(name_or_path='brad1141/gpt2-finetuned-comp2', vocab_size=50257, model_max_length=2048, is_fast=True, padding_side='right', truncation_side='right', special_tokens={'bos_token': '<|endoftext|>', 'eos_token': '<|endoftext|>', 'unk_token': '<|endoftext|>', 'pad_token': '<|endoftext|>'}, clean_up_tokenization_spaces=True)
+GPT2ForTokenClassification(
+  (transformer): GPT2Model(
+    (wte): Embedding(50257, 768)
+    (wpe): Embedding(2048, 768)
+    (drop): Dropout(p=0.1, inplace=False)
+    (h): ModuleList(
+      (0-11): 12 x GPT2Block(
+        (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        (attn): GPT2Attention(
+          (c_attn): Conv1D()
+          (c_proj): Conv1D()
+          (attn_dropout): Dropout(p=0.1, inplace=False)
+          (resid_dropout): Dropout(p=0.1, inplace=False)
+        )
+        (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        (mlp): GPT2MLP(
+          (c_fc): Conv1D()
+          (c_proj): Conv1D()
+          (act): NewGELUActivation()
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+      )
+    )
+    (ln_f): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+  )
+  (dropout): Dropout(p=0.1, inplace=False)
+  (classifier): Linear(in_features=768, out_features=4, bias=True)
+)
+Epoch 17/100, Loss: 1.0428
+Epoch 18/100, Loss: 1.0413
+Epoch 19/100, Loss: 1.0375
+Epoch 20/100, Loss: 1.0398
+Epoch 21/100, Loss: 1.0373
+Epoch 21/100, Val Loss: 0.1340
+Epoch 22/100, Loss: 1.0375
+Epoch 23/100, Loss: 1.0371
+Epoch 24/100, Loss: 1.0344
+Epoch 25/100, Loss: 1.0356
+Epoch 26/100, Loss: 1.0339
+Epoch 27/100, Loss: 1.0348
+Epoch 28/100, Loss: 1.0339
+Epoch 29/100, Loss: 1.0321
+Epoch 30/100, Loss: 1.0309
+Epoch 31/100, Loss: 1.0289
+Epoch 31/100, Val Loss: 0.1286
+Epoch 32/100, Loss: 1.0298
+Epoch 33/100, Loss: 1.0258
+Epoch 34/100, Loss: 1.0265
+Epoch 35/100, Loss: 1.0281
+Epoch 36/100, Loss: 1.0273
+Epoch 37/100, Loss: 1.0232
+Epoch 38/100, Loss: 1.0222
+Epoch 39/100, Loss: 1.0208
+Epoch 40/100, Loss: 1.0180
+Epoch 41/100, Loss: 1.0202
+Epoch 41/100, Val Loss: 0.1339
+Epoch 42/100, Loss: 1.0189
+Epoch 43/100, Loss: 1.0142
+Epoch 44/100, Loss: 1.0151
+Epoch 45/100, Loss: 1.0136
+Epoch 46/100, Loss: 1.0121
+Epoch 47/100, Loss: 1.0079
+Epoch 48/100, Loss: 1.0079
+Epoch 49/100, Loss: 1.0088
+Epoch 50/100, Loss: 1.0076
+Epoch 51/100, Loss: 1.0067
+Epoch 51/100, Val Loss: 0.1234
+Epoch 52/100, Loss: 1.0031
+Epoch 53/100, Loss: 1.0027
+Epoch 54/100, Loss: 1.0019
+Epoch 55/100, Loss: 0.9986
+Epoch 56/100, Loss: 0.9991
+Epoch 57/100, Loss: 0.9944
+Epoch 58/100, Loss: 0.9923
+Epoch 59/100, Loss: 0.9856
+Epoch 60/100, Loss: 0.9892
+Epoch 61/100, Loss: 0.9873
+Epoch 61/100, Val Loss: 0.1214
+Epoch 62/100, Loss: 0.9843
+Epoch 63/100, Loss: 0.9815
+Epoch 64/100, Loss: 0.9805
+Epoch 65/100, Loss: 0.9811
+Epoch 66/100, Loss: 0.9769
+Epoch 67/100, Loss: 0.9752
+Epoch 68/100, Loss: 0.9727
+Epoch 69/100, Loss: 0.9679
+Epoch 70/100, Loss: 0.9699
+Epoch 71/100, Loss: 0.9590
+Epoch 71/100, Val Loss: 0.1302
+Epoch 72/100, Loss: 0.9644
+Epoch 73/100, Loss: 0.9610
+Epoch 74/100, Loss: 0.9592
+Epoch 75/100, Loss: 0.9516
+Epoch 76/100, Loss: 0.9506
+Epoch 77/100, Loss: 0.9457
+Epoch 78/100, Loss: 0.9427
+Epoch 79/100, Loss: 0.9463
+Epoch 80/100, Loss: 0.9342
+Epoch 81/100, Loss: 0.9370
+Epoch 81/100, Val Loss: 0.1279
+Epoch 82/100, Loss: 0.9324
+Epoch 83/100, Loss: 0.9407
+Epoch 84/100, Loss: 0.9310
+Epoch 85/100, Loss: 0.9272
+Epoch 86/100, Loss: 0.9150
+Epoch 87/100, Loss: 0.9201
+Epoch 88/100, Loss: 0.9187
+Epoch 89/100, Loss: 0.9189
+Epoch 90/100, Loss: 0.9104
+Epoch 91/100, Loss: 0.9104
+Epoch 91/100, Val Loss: 0.1348
+Epoch 92/100, Loss: 0.9208
+Epoch 93/100, Loss: 0.8985
+Epoch 94/100, Loss: 0.9079
+Epoch 95/100, Loss: 0.9088
+Epoch 96/100, Loss: 0.8939
+Epoch 97/100, Loss: 0.8917
+Epoch 98/100, Loss: 0.8902
+Epoch 99/100, Loss: 0.8850
+Epoch 100/100, Loss: 0.8880
+Epoch 101/100, Loss: 0.8820
+Epoch 101/100, Val Loss: 0.1389
